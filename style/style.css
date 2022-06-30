@@ -13,13 +13,16 @@
 /* Toolbar */
 header {
   display: flex;
+  padding: 24px;
 }
 
-.logo {
+.logo a {
   padding: 20px 20px;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+  text-decoration: none;
+  color: #000001;
 }
 
 nav {
@@ -41,30 +44,34 @@ nav > div {
 
 /* Headline */
 main {
-  height: 130vh;
-  padding: 20px 0;
+  min-height: 640px;
+  max-height: 100vh;
+  min-width: 360px;
+  max-width: 100vh;
+  background-image: url("/images/bg1.png");
+  background-size: cover;
+  background-position: top center;
 }
 
 #headline {
-  background-image: url("/images/bg1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  height: inherit;
-  padding: 0 20px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 40px;
 }
 
-.fonts {
+.fonts,
+h1 {
   font-weight: 700;
   font-size: 40px;
-  line-height: 52px;
+  line-height: 50px;
   text-align: center;
+  padding: 0 20px;
 }
 
 #headline .intro {
   color: #0a2759;
-  padding-top: 84px;
+  padding-top: 60px;
 }
 
 #headline .bg {
@@ -74,20 +81,22 @@ main {
 #headline .more {
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 30px;
   text-align: center;
   color: #172b4b;
-  padding-top: 58px;
+  padding: 0 24px;
 }
 
 #headline .social-account ul {
-  padding-top: 73px;
-  padding-bottom: 73px;
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-  margin: auto;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.social-account ul li {
+  margin-left: 15px;
 }
 
 .social-account a i {
@@ -111,6 +120,15 @@ main {
   color: #505f79;
   font-weight: bold;
   width: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
 }
 
 /* Tablet */
