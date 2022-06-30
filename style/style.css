@@ -95,9 +95,9 @@ main {
   font-size: 22px;
 }
 
-.arrow-down button{
-  border: 1px solid #DFE1E6;
-  background: #FFF;
+.arrow-down button {
+  border: 1px solid #dfe1e6;
+  background: #fff;
   width: 40px;
   height: 40px;
   display: flex;
@@ -107,7 +107,7 @@ main {
   margin: auto;
 }
 
-.arrow-down button  i{
+.arrow-down button i {
   color: #505f79;
   font-weight: bold;
   width: 20px;
