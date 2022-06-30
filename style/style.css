@@ -1,6 +1,9 @@
 /* Mobile */
+
 /* Global */
-*, ::after, ::before{
+*,
+::after,
+::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,22 +11,22 @@
 }
 
 /* Toolbar */
-header{
+header {
   display: flex;
 }
 
-nav{
+nav {
   display: none;
 }
 
-.logo{
+.logo {
   padding: 20px 20px;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
 }
 
-.menu{
+.menu {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -32,60 +35,59 @@ nav{
   padding: 10px 20px;
 }
 
-.menu > div{
+.menu > div {
   width: 16px;
   height: 2px;
-  background:#000001;
+  background: #000001;
   margin: 2px;
   border-radius: 50px;
 }
 
 /* Headline */
-main{
-  height:130vh;
-  padding:20px 0px;
+main {
+  height: 130vh;
+  padding: 20px 0;
 }
-#headline{
+
+#headline {
   background-image: url("/images/bg1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   height: inherit;
-  padding: 0px 20px;
-  
+  padding: 0 20px;
 }
 
-.fonts{
+.fonts {
   font-weight: 700;
   font-size: 40px;
-  line-height:52px;
+  line-height: 52px;
   text-align: center;
 }
 
-#headline .intro{
-  color: #0A2759;
+#headline .intro {
+  color: #0a2759;
   padding-top: 84px;
-  
 }
 
-#headline .bg{
-  color: #36B37F;
-  
+#headline .bg {
+  color: #36b37f;
 }
-#headline .more{
+
+#headline .more {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #172B4B;
+  color: #172b4b;
   padding-top: 58px;
 }
 
-#headline .more .coffee{
+#headline .more .coffee {
   margin-top: 15px;
 }
 
-#headline .social-account{
+#headline .social-account {
   padding-top: 73px;
   padding-bottom: 73px;
   display: flex;
@@ -94,11 +96,10 @@ main{
   margin: auto;
 }
 
-.social-account span{
-  fill:#505F79;
+.social-account a i {
+  color: #505f79;
+  font-size: 20px;
 }
-
-
 
 /* Tablet */
 
