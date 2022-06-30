@@ -81,8 +81,8 @@ main{
   padding-top: 58px;
 }
 
-#headline .more a img{
-  
+#headline .more .coffee{
+  margin-top: 15px;
 }
 
 #headline .social-account{
@@ -92,6 +92,10 @@ main{
   width: 50%;
   justify-content: space-between;
   margin: auto;
+}
+
+.social-account span{
+  fill:#505F79;
 }
 
 
