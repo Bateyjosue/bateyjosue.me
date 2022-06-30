@@ -12,17 +12,15 @@ header{
   display: flex;
 }
 
-
-
 nav{
   display: none;
 }
 
 .logo{
   padding: 20px 20px;
-  font-weight:600;
-  font-size:20px;
-  line-height:28px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .menu{
@@ -33,6 +31,7 @@ nav{
   flex: 1;
   padding: 10px 20px;
 }
+
 .menu > div{
   width: 16px;
   height: 2px;
@@ -42,6 +41,60 @@ nav{
 }
 
 /* Headline */
+main{
+  height:130vh;
+  padding:20px 0px;
+}
+#headline{
+  background-image: url("/images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: inherit;
+  padding: 0px 20px;
+  
+}
+
+.fonts{
+  font-weight: 700;
+  font-size: 40px;
+  line-height:52px;
+  text-align: center;
+}
+
+#headline .intro{
+  color: #0A2759;
+  padding-top: 84px;
+  
+}
+
+#headline .bg{
+  color: #36B37F;
+  
+}
+#headline .more{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172B4B;
+  padding-top: 58px;
+}
+
+#headline .more a img{
+  
+}
+
+#headline .social-account{
+  padding-top: 73px;
+  padding-bottom: 73px;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+
 
 /* Tablet */
 
