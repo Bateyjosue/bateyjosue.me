@@ -15,10 +15,6 @@ header {
   display: flex;
 }
 
-nav {
-  display: none;
-}
-
 .logo {
   padding: 20px 20px;
   font-weight: 600;
@@ -26,7 +22,7 @@ nav {
   line-height: 28px;
 }
 
-.menu {
+nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -35,7 +31,7 @@ nav {
   padding: 10px 20px;
 }
 
-.menu > div {
+nav > div {
   width: 16px;
   height: 2px;
   background: #000001;
@@ -56,6 +52,7 @@ main {
   background-attachment: scroll;
   height: inherit;
   padding: 0 20px;
+  width: 100%;
 }
 
 .fonts {
@@ -83,22 +80,37 @@ main {
   padding-top: 58px;
 }
 
-#headline .more .coffee {
-  margin-top: 15px;
-}
-
-#headline .social-account {
+#headline .social-account ul {
   padding-top: 73px;
   padding-bottom: 73px;
   display: flex;
   width: 50%;
   justify-content: space-between;
   margin: auto;
+  list-style-type: none;
 }
 
 .social-account a i {
   color: #505f79;
-  font-size: 20px;
+  font-size: 22px;
+}
+
+.arrow-down button{
+  border: 1px solid #DFE1E6;
+  background: #FFF;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+  margin: auto;
+}
+
+.arrow-down button  i{
+  color: #505f79;
+  font-weight: bold;
+  width: 20px;
 }
 
 /* Tablet */
