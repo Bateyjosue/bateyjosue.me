@@ -78,13 +78,17 @@ h1 {
   color: #36b37f;
 }
 
-#headline .more {
+.pad{
+  padding: 0 24px;
+}
+
+.more {
   font-weight: 400;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 32px;
+  font-style: normal;
   text-align: center;
   color: #172b4b;
-  padding: 0 24px;
 }
 
 #headline .social-account ul {
@@ -134,7 +138,7 @@ h6 {
 #works{
   padding: 16px;
 }
-#works .title{
+.title{
   font-weight: 700;
   font-size: 40px;
   text-align: center;
@@ -157,20 +161,21 @@ h6 {
 }
 #grid .card-container {
   background: #EBF0EE;
-  padding: 5px;
+  border: 1px solid #EBF0EE;
+  padding: 0px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
 }
 
 .card-container .card-image{
-  flex: 1;
+  flex: 1.3;
 }
 .card-container .card-body{
   flex: 1;
   background: #fff;
-  border-radius: 8px 8px 0px 0px;
-  padding: 16px;
+  border-radius: 8px;
+  padding: 12px;
 }
 
 .card-body .card-title h2{
@@ -192,7 +197,7 @@ h6 {
 .card-content ul li{
   background: #EBF0EE;
   padding: 8px 7px;
-  border-radius: 5px;
+  border-radius: 4px;
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
@@ -203,10 +208,10 @@ h6 {
 .card-button{
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
-.card-button button{
+button{
   padding: 12px;
   background: #36B37f;
   border-radius: 4px;
@@ -216,6 +221,106 @@ h6 {
   height: 48px;
 }
 
+#about-myself{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+#about-myself h2{
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+#about-myself button{
+  margin-top: 10px;
+}
+
+#experience{
+  display: grid;
+  grid-template-columns: 327px ;
+  grid-template-rows: 352px 352px 352px;
+  gap: 24px;
+  padding: 20px;
+}
+
+.card-exp{
+  background: #EBF0EE;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.profile-exp{
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-exp{
+  flex: 1;
+  
+}
+
+.profile-exp .image{
+  background: rgb(255, 255, 255);
+  width: 80px;
+  height: 80px;
+  border-radius: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-exp h3{
+  font-weight: 600;
+  font-size: 24px;
+  line-height:32px;
+  color: #344563;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.content-exp ul{
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.content-exp ul li{
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+  color: #36b37e;
+  font-weight: 600;
+  font-size: 12px;
+  line-height:16px
+}
+
+.img-up{
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+
+.img-down{
+  position: absolute;
+  left: 0px;
+  bottom: 6px;
+  
+}
 /* Tablet */
 
 /* Desktop */
