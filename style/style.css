@@ -183,11 +183,12 @@ h6 {
 
 #grid .card-container {
   background: #ebf0ee;
+  border-radius: 8px;
   border: 1px solid #ebf0ee;
   padding: 0;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .card-container .card-image {
@@ -199,6 +200,7 @@ h6 {
   background: #fff;
   border-radius: 8px;
   padding: 12px;
+  z-index: 1;
 }
 
 .card-body .card-title h2 {
@@ -253,15 +255,18 @@ h6 {
   align-items: center;
   gap: 20px;
   position: relative;
+  background: url("../images/frameup.png"), url("../images/Framed.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
 }
 
 #about-myself h2 {
-  padding-top: 20px;
-  margin-bottom: 10px;
+  padding-top: 25px;
+  margin-top: 20px;
 }
 
 #about-myself button {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #experience {
@@ -321,17 +326,6 @@ h6 {
   line-height: 16px;
 }
 
-.img-up {
-  position: absolute;
-  right: 0;
-  top: -10px;
-}
-
-.img-down {
-  position: absolute;
-  left: 0;
-  bottom: 6px;
-}
 
 /* Tablet */
 
