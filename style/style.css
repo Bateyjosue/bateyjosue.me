@@ -145,15 +145,6 @@ h1 {
   width: 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* clear: both; */
-}
-
 #works {
   padding: 16px;
 }
@@ -208,7 +199,6 @@ h6 {
   background: #fff;
   border-radius: 14px 14px 8px 8px;
   padding: 12px;
-  /* z-index: 1; */
 }
 
 .card-body .card-title h2 {
@@ -339,17 +329,27 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
+
 }
 
 .contact-form ul {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content:center;
   gap: 24px;
-  padding: 24px;
+  padding: 2px;
+  margin-top: 15px;
+}
+
+.contact-form ul li{
+  width: 100%;
 }
 
 .contact-form input,textarea {
-  font-family: 'Inter';
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -357,7 +357,16 @@ footer {
   border: 1px solid #D0D9D4;
   border-radius: 4px;
   width: 100%;
-  padding: 10px 100px 10px 5px;
+  padding: 16px;
+}
+
+.contact-form input{
+  height:48px;
+}
+
+.contact-form textarea{
+  height:114px;
+  outline-color: #36b37e;
 }
 
 .contact-form input:focus {
@@ -371,11 +380,29 @@ footer {
 
 .social-account p {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
+  font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+text-align: center;
+color: #42526E;
 }
 
 ul li {
   list-style-type: none;
+}
+
+.social-account ul {
+  justify-content: center;
+}
+footer .social-account{
+  background: url("images/bg-f1.png");
+  background-repeat: repeat;
+  background-position: right;
+  background-size: contain;
+  
 }
 
 
