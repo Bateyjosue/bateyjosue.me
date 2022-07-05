@@ -44,20 +44,18 @@ nav > div {
 
 /* Headline */
 main {
-  min-height: 640px;
-  max-height: 100vh;
-  min-width: 360px;
-  max-width: 100vh;
+  
   background-image: url("/images/bg1.png");
-  background-size: cover;
+  background-size: contain;
   background-position: top center;
+  background-repeat: no-repeat;
 }
 
 #headline {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 40px;
+  gap: 24px;
 }
 
 .fonts,
@@ -80,15 +78,17 @@ h1 {
 
 .pad {
   padding: 0 24px;
+  
 }
 
 .more {
   font-weight: 400;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 30px;
   font-style: normal;
   text-align: center;
   color: #172b4b;
+  margin-bottom: 20px;
 }
 
 .card-content ul {
@@ -136,6 +136,7 @@ h1 {
   justify-content: center;
   border-radius: 32px;
   margin: auto;
+  margin-top: 30px;
 }
 
 .arrow-down button i {
