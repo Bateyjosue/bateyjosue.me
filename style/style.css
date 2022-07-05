@@ -330,22 +330,22 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-
 }
 
 .contact-form ul {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:center;
-  gap: 24px;
-  padding: 2px;
-  margin-top: 15px;
-}
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 24px;
+} 
 
 .contact-form ul li{
   width: 100%;
+}
+
+.contact-form ul li:nth-child(4){
+  text-align: center;
 }
 
 .contact-form input,textarea {
@@ -382,28 +382,31 @@ footer {
   margin-top: 20px;
   margin-bottom: 80px;
   font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 32px;
-text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
 color: #42526E;
+}
+
+.social-account ul{
+  margin-top: -50px;
+  justify-content:center;
+  font-size:18px;
 }
 
 ul li {
   list-style-type: none;
 }
 
-.social-account ul {
-  justify-content: center;
+form {
+  background: url("/images/bg-foot.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-bottom: 60px;
 }
-footer .social-account{
-  background: url("images/bg-f1.png");
-  background-repeat: repeat;
-  background-position: right;
-  background-size: contain;
-  
-}
+
 
 
 /* Tablet */
