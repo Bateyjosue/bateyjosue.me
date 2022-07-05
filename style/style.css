@@ -333,6 +333,33 @@ h6 {
   line-height: 16px;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.contact-form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.contact-form input,textarea {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 /* Tablet */
 
 /* Desktop */
