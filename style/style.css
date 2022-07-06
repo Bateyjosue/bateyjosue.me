@@ -44,7 +44,6 @@ nav > div {
 
 /* Headline */
 main {
-  
   background-image: url("/images/bg1.png");
   background-size: contain;
   background-position: top center;
@@ -78,7 +77,6 @@ h1 {
 
 .pad {
   padding: 0 24px;
-  
 }
 
 .more {
@@ -110,11 +108,14 @@ h1 {
 }
 
 .social-account ul {
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
   width: 50%;
   margin: 0 auto;
+}
+
+ul li {
+  list-style-type: none;
 }
 
 .social-account ul li {
@@ -253,8 +254,9 @@ h1 {
   align-items: center;
   gap: 20px;
   position: relative;
-  background: url("../images/frameup.png"), 
-  url("../images/Framed.png");
+  background:
+    url("../images/frameup.png"),
+    url("../images/Framed.png");
   background-repeat: no-repeat, no-repeat;
   background-position: top right, bottom left;
 }
@@ -338,66 +340,62 @@ footer {
   gap: 16px;
   justify-content: center;
   padding: 24px;
-} 
+}
 
-.contact-form ul li{
+.contact-form ul li {
   width: 100%;
 }
 
-.contact-form ul li:nth-child(4){
+.contact-form ul li:nth-child(4) {
   text-align: center;
 }
 
-.contact-form input,textarea {
-  font-family: 'Arial';
+.contact-form input,
+textarea {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
   width: 100%;
   padding: 16px;
 }
 
-.contact-form input{
-  height:48px;
+.contact-form input {
+  height: 48px;
 }
 
-.contact-form textarea{
-  height:114px;
+.contact-form textarea {
+  height: 114px;
   outline-color: #36b37e;
 }
 
 .contact-form input:focus {
   outline: none !important;
-  border:1px solid #60C095;
+  border: 1px solid #60c095;
 }
+
 .contact-form textarea:focus {
   outline: none !important;
-  border:1px solid #60C095;
+  border: 1px solid #60c095;
 }
 
 .social-account p {
   margin-top: 20px;
   margin-bottom: 80px;
-  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-color: #42526E;
+  color: #42526e;
 }
 
-.social-account ul{
+.footer-social-account ul {
   margin-top: -50px;
-  justify-content:center;
-  font-size:18px;
-}
-
-ul li {
-  list-style-type: none;
+  justify-content: center;
+  font-size: 18px;
 }
 
 form {
@@ -406,8 +404,6 @@ form {
   background-position: right bottom;
   padding-bottom: 60px;
 }
-
-
 
 /* Tablet */
 
