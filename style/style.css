@@ -44,20 +44,17 @@ nav > div {
 
 /* Headline */
 main {
-  min-height: 640px;
-  max-height: 100vh;
-  min-width: 360px;
-  max-width: 100vh;
   background-image: url("/images/bg1.png");
-  background-size: cover;
+  background-size: contain;
   background-position: top center;
+  background-repeat: no-repeat;
 }
 
 #headline {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 40px;
+  gap: 24px;
 }
 
 .fonts,
@@ -85,10 +82,11 @@ h1 {
 .more {
   font-weight: 400;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 30px;
   font-style: normal;
   text-align: center;
   color: #172b4b;
+  margin-bottom: 20px;
 }
 
 .card-content ul {
@@ -109,12 +107,15 @@ h1 {
   margin-bottom: 10px;
 }
 
-#headline .social-account ul {
-  list-style-type: none;
+.social-account ul {
   display: flex;
   justify-content: space-between;
   width: 50%;
   margin: 0 auto;
+}
+
+ul li {
+  list-style-type: none;
 }
 
 .social-account ul li {
@@ -136,21 +137,13 @@ h1 {
   justify-content: center;
   border-radius: 32px;
   margin: auto;
+  margin-top: 30px;
 }
 
 .arrow-down button i {
   color: #505f79;
   font-weight: 400;
   width: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  clear: both;
 }
 
 #works {
@@ -207,7 +200,6 @@ h6 {
   background: #fff;
   border-radius: 14px 14px 8px 8px;
   padding: 12px;
-  z-index: 1;
 }
 
 .card-body .card-title h2 {
@@ -251,7 +243,11 @@ h6 {
 }
 
 .button:active {
-  background: #36b37e;
+  background: #008552;
+}
+
+.button + [desabled] {
+  background: #36b37f;
 }
 
 #about-myself {
@@ -262,7 +258,9 @@ h6 {
   align-items: center;
   gap: 20px;
   position: relative;
-  background: url("../images/frameup.png"), url("../images/Framed.png");
+  background:
+    url("../images/frameup.png"),
+    url("../images/Framed.png");
   background-repeat: no-repeat, no-repeat;
   background-position: top right, bottom left;
 }
@@ -331,6 +329,84 @@ h6 {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-form ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 24px;
+}
+
+.contact-form ul li {
+  width: 100%;
+}
+
+.contact-form ul li:nth-child(4) {
+  text-align: center;
+}
+
+.contact-form input,
+textarea {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 100%;
+  padding: 16px;
+}
+
+.contact-form input {
+  height: 48px;
+}
+
+.contact-form textarea {
+  height: 114px;
+  outline-color: #36b37e;
+}
+
+.contact-form input:focus {
+  outline: none !important;
+  border: 1px solid #60c095;
+}
+
+.contact-form textarea:focus {
+  outline: none !important;
+  border: 1px solid #60c095;
+}
+
+.social-account p {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+.footer-social-account ul {
+  margin-top: -50px;
+  justify-content: center;
+  font-size: 18px;
+}
+
+form {
+  background: url("/images/bg-foot.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-bottom: 60px;
 }
 
 /* Tablet */
