@@ -245,6 +245,7 @@ ul li {
 .button:active {
   background: #008552;
 }
+
 .button+[desabled] {
   background: #36B37F;
 }
