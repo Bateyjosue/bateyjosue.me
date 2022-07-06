@@ -243,7 +243,10 @@ ul li {
 }
 
 .button:active {
-  background: #36b37e;
+  background: #008552;
+}
+.button+[desabled] {
+  background: #36B37F;
 }
 
 #about-myself {
