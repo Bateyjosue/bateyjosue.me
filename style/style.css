@@ -246,8 +246,8 @@ ul li {
   background: #008552;
 }
 
-.button+[desabled] {
-  background: #36B37F;
+.button + [desabled] {
+  background: #36b37f;
 }
 
 #about-myself {
