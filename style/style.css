@@ -16,7 +16,7 @@ header {
   padding: 24px;
 }
 
-header .logo{
+header .logo {
   display: block;
 }
 
@@ -45,7 +45,8 @@ nav > div {
   margin: 2px;
   border-radius: 50px;
 }
-nav ul{
+
+nav ul {
   display: none;
 }
 
@@ -237,7 +238,7 @@ ul li {
 .button {
   padding: 12px;
   height: 48px;
-  border: 0px;
+  border: 0;
   border-radius: 4px;
   background: #36b37f;
   color: #fff;
@@ -365,7 +366,7 @@ footer {
   text-align: center;
 }
 
-.footer-social-account .footer-email{
+.footer-social-account .footer-email {
   display: block;
 }
 
@@ -427,8 +428,8 @@ form {
 /* Tablet */
 
 /* Desktop */
-@media screen and (min-width: 768px){
-  header .logo{
+@media screen and (min-width: 768px) {
+  header .logo {
     display: none;
   }
 
@@ -436,14 +437,14 @@ form {
     display: none;
   }
 
-  nav ul{
+  nav ul {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 30px;
   }
 
-  nav ul a{
+  nav ul a {
     margin-bottom: 20px;
     color: #0a2759;
     font-weight: bold;
@@ -454,31 +455,31 @@ form {
     text-decoration: none;
   }
 
-  header{
-    position:fixed;
+  header {
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
   }
 
-  main{
-    background-image:url("");
+  main {
+    background-image: url("");
   }
 
-  #headline{
-    background-image:url("/images/desk-bg-headline.png");
+  #headline {
+    background-image: url("/images/desk-bg-headline.png");
     background-repeat: no-repeat;
     background-size: 100% 122vh;
-    background-position:  top center ;
+    background-position: top center;
     background-attachment: scroll;
     height: 117vh;
     justify-content: center;
   }
-  
-  #headline > div{
+
+  #headline > div {
     width: 50%;
     margin: 0 auto;
-    line-height:30px;
+    line-height: 30px;
   }
 
   .fonts,
@@ -487,7 +488,7 @@ form {
     font-size: 48px;
     line-height: 50px;
     text-align: center;
-    letter-spacing: .37px;
+    letter-spacing: 0.37px;
   }
 
   .more {
@@ -499,7 +500,7 @@ form {
     color: #172b4b;
   }
 
-  #headline > div+.social-account ul{ 
+  #headline > div + .social-account ul {
     margin-top: 20px;
     margin-bottom: 64px;
     display: flex;
@@ -507,20 +508,13 @@ form {
     width: 30%;
   }
 
-  #works{}
-
   #grid {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(2, 1fr);
     gap: 24px;
     justify-content: center;
-    margin:0 142px;
-
-  }
-  
-  #grid .card-container {
-    
+    margin: 0 142px;
   }
 
   #grid .card-container .card-image {
@@ -529,11 +523,12 @@ form {
     background-size: cover;
     background-blend-mode: darken;
   }
-  
-  hr{
+
+  hr {
     display: none;
   }
-  .title{
+
+  .title {
     margin-bottom: 24px;
   }
 
@@ -550,18 +545,18 @@ form {
     font-size: 28px;
   }
 
-  .card-content ul li{
+  .card-content ul li {
     letter-spacing: 0.03em;
     font-size: 14px;
   }
 
-  #about-myself{
+  #about-myself {
     padding-top: 24px;
     margin-top: 40px;
     background-image:
-      url("/images/left-desk.png"), 
+      url("/images/left-desk.png"),
       url("/images/right-dest.jpg");
-      background-position: bottom left, top right;
+    background-position: bottom left, top right;
   }
 
   #about-myself .more {
@@ -569,10 +564,10 @@ form {
     line-height: 42px;
   }
 
-  #experience{
+  #experience {
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(1, 352px);
-    justify-content:center;
+    justify-content: center;
   }
 
   .card-exp {
@@ -581,11 +576,11 @@ form {
     justify-content: space-between;
   }
 
-  .card-exp .profile-exp{
+  .card-exp .profile-exp {
     flex: 1;
   }
 
-  .card-exp .content-exp{
+  .card-exp .content-exp {
     flex: 1;
   }
 
@@ -594,50 +589,49 @@ form {
     font-size: 14px;
   }
 
-  form{
-    background-image:url("");
+  form {
+    background-image: url("");
   }
 
-  footer{
+  footer {
     flex-direction: column;
     padding-top: 40px;
     box-sizing: content-box;
   }
-  
+
   .contact-form ul li:nth-child(4) {
     text-align: left;
   }
-  
-  #contact .footer-content{
+
+  #contact .footer-content {
     display: grid;
-    grid-template-columns: .8fr 1.2fr;
-    justify-content: center; 
+    grid-template-columns: 0.8fr 1.2fr;
+    justify-content: center;
     align-items: center;
-    padding: 0px 134px;
-    background-image: url("/images/left.png"), url("/images/center.png"),url("/images/right.png");
+    padding: 0 134px;
+    background-image: url("/images/left.png"), url("/images/center.png"), url("/images/right.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: bottom left, 400px 300px,bottom right;
+    background-position: bottom left, 400px 300px, bottom right;
     padding-bottom: 50px;
     border-bottom: 2px gray solid;
     margin-bottom: 60px;
   }
 
-  .footer-content p{
+  .footer-content p {
     padding-bottom: 40px;
   }
 
-  footer#contact .social-account ul{
-    padding: 20px 0px;
+  footer#contact .social-account ul {
+    padding: 20px 0;
     font-size: 30px;
   }
 
-  footer#contact .social-account ul li a i{
-    font-size:30px;
-    padding: 0px 10px;
+  footer#contact .social-account ul li a i {
+    font-size: 30px;
+    padding: 0 10px;
   }
 
-  .footer-social-account .footer-email{
+  .footer-social-account .footer-email {
     display: none;
   }
-  
 }
