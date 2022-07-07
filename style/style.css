@@ -576,12 +576,27 @@ form {
 
   #experience{
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 352px);
     justify-content:center;
   }
 
-  #experience .card-exp{
-    
+  .card-exp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-exp .profile-exp{
+    flex: 1;
+  }
+
+  .card-exp .content-exp{
+    flex: 1;
+  }
+
+  .content-exp ul li {
+    letter-spacing: 0.04em;
+    font-size: 14px;
   }
 
   form{
