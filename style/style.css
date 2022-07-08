@@ -461,20 +461,27 @@ form {
     left: 0;
   }
 
+  .logo a{
+    font-size: 30px;
+    padding: 24px;
+    text-decoration: overline;
+  }
+
   .logo {
     color: #2230d2;
+    
     animation-name: rotate-logo;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
   }
 
   @keyframes rotate-logo {
     50% {
-      transform: scale(1.5) rotate(360deg) translate(-50%);
+      transform: scale(1.5) rotate(360deg) translate(0%);
     }
 
     to {
-      transform: scale(1) rotate(720deg) translateX(0)
+      transform: scale(1) rotate(720deg) translateX(50%)
     }
   }
 
