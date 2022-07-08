@@ -634,4 +634,9 @@ form {
   .footer-social-account .footer-email {
     display: none;
   }
+
+  .card-image img:hover,
+  :focus{
+    transform: scale(1.2);
+  }
 }
