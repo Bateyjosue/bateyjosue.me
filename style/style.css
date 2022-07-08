@@ -248,10 +248,12 @@ ul li {
   font-size: 17px;
   letter-spacing: 3%;
   line-height: 24px;
+  transition: background 2s, color 2s;
 }
 
 .button:hover {
-  background: #58d3a0;
+  background-color: white;
+  color: #36b37f;
 }
 
 .button:active {
@@ -429,10 +431,6 @@ form {
 
 /* Desktop */
 @media screen and (min-width: 768px) {
-  header .logo {
-    display: none;
-  }
-
   nav > div {
     display: none;
   }
@@ -460,6 +458,29 @@ form {
     top: 0;
     right: 0;
     left: 0;
+  }
+
+  .logo a {
+    font-size: 30px;
+    padding: 24px;
+    text-decoration: overline;
+  }
+
+  .logo {
+    color: #2230d2;
+    animation-name: rotate-logo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes rotate-logo {
+    50% {
+      transform: scale(1.5) rotate(360deg) translate(0%);
+    }
+
+    to {
+      transform: scale(1) rotate(720deg) translateX(50%);
+    }
   }
 
   main {
@@ -530,6 +551,11 @@ form {
 
   .title {
     margin-bottom: 24px;
+  }
+
+  .card-image img:hover,
+  :focus {
+    transform: scale(1.2);
   }
 
   #grid .card-image img {
