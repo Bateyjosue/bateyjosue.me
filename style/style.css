@@ -248,10 +248,12 @@ ul li {
   font-size: 17px;
   letter-spacing: 3%;
   line-height: 24px;
+  transition: background 2s, color 2s;
 }
 
 .button:hover {
-  background: #58d3a0;
+  background-color: white;
+  color:  #36b37f;
 }
 
 .button:active {
