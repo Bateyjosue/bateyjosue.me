@@ -253,7 +253,7 @@ ul li {
 
 .button:hover {
   background-color: white;
-  color:  #36b37f;
+  color: #36b37f;
 }
 
 .button:active {
@@ -431,7 +431,6 @@ form {
 
 /* Desktop */
 @media screen and (min-width: 768px) {
-
   nav > div {
     display: none;
   }
@@ -461,7 +460,7 @@ form {
     left: 0;
   }
 
-  .logo a{
+  .logo a {
     font-size: 30px;
     padding: 24px;
     text-decoration: overline;
@@ -469,7 +468,6 @@ form {
 
   .logo {
     color: #2230d2;
-    
     animation-name: rotate-logo;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -481,7 +479,7 @@ form {
     }
 
     to {
-      transform: scale(1) rotate(720deg) translateX(50%)
+      transform: scale(1) rotate(720deg) translateX(50%);
     }
   }
 
@@ -553,6 +551,11 @@ form {
 
   .title {
     margin-bottom: 24px;
+  }
+
+  .card-image img:hover,
+  :focus {
+    transform: scale(1.2);
   }
 
   #grid .card-image img {
@@ -656,10 +659,5 @@ form {
 
   .footer-social-account .footer-email {
     display: none;
-  }
-
-  .card-image img:hover,
-  :focus{
-    transform: scale(1.2);
   }
 }
