@@ -421,7 +421,7 @@ textarea {
 }
 
 form {
-  background: url("/images/bg-foot.png");
+  background: url("../images/bg-foot.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   padding-bottom: 60px;
@@ -488,7 +488,7 @@ form {
   }
 
   #headline {
-    background-image: url("/images/desk-bg-headline.png");
+    background-image: url("../images/desk-bg-headline.png");
     background-repeat: no-repeat;
     background-size: 100% 122vh;
     background-position: top center;
@@ -540,7 +540,7 @@ form {
 
   #grid .card-container .card-image {
     height: 350px;
-    background-image: url("/images/bg-gray.jpg");
+    background-image: url("../images/bg-gray.jpg");
     background-size: cover;
     background-blend-mode: darken;
   }
@@ -580,8 +580,8 @@ form {
     padding-top: 24px;
     margin-top: 40px;
     background-image:
-      url("/images/left-desk.png"),
-      url("/images/right-dest.jpg");
+      url("../images/left-desk.png"),
+      url("../images/right-dest.jpg");
     background-position: bottom left, top right;
   }
 
@@ -592,7 +592,7 @@ form {
 
   #experience {
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(1, 352px);
+    grid-template-rows: repeat(1, 400px);
     justify-content: center;
   }
 
@@ -607,7 +607,7 @@ form {
   }
 
   .card-exp .content-exp {
-    flex: 1;
+    flex: 1.3;
   }
 
   .content-exp ul li {
@@ -635,7 +635,7 @@ form {
     justify-content: center;
     align-items: center;
     padding: 0 134px;
-    background-image: url("/images/left.png"), url("/images/center.png"), url("/images/right.png");
+    background-image: url("../images/left.png"), url("../images/center.png"), url("../images/right.png");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom left, 400px 300px, bottom right;
     padding-bottom: 50px;
