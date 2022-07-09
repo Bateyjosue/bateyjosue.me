@@ -235,7 +235,7 @@ ul li {
   padding-top: 12px;
 }
 
-.button {
+.button, button a {
   padding: 12px;
   height: 48px;
   border: 0;
@@ -249,6 +249,7 @@ ul li {
   letter-spacing: 3%;
   line-height: 24px;
   transition: background 2s, color 2s;
+  text-decoration: none;
 }
 
 .button:hover {
