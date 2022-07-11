@@ -301,7 +301,7 @@ ul li {
 .card-exp {
   background: #ebf0ee;
   border-radius: 8px;
-  display:grid;
+  display: grid;
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   justify-content: space-around;
@@ -531,7 +531,7 @@ form {
     width: 30%;
   }
 
-  #works{
+  #works {
     width: 80%;
     margin: 0 auto;
   }
@@ -597,7 +597,7 @@ form {
     line-height: 42px;
   }
 
-  .skills{
+  .skills {
     width: 80%;
     margin: 0 auto;
   }
