@@ -10,6 +10,10 @@
   font-family: arial, sans-serif;
 }
 
+.hide{
+  display:none;
+}
+
 /* Toolbar */
 header {
   display: flex;
@@ -641,6 +645,10 @@ form {
     padding-bottom: 50px;
     border-bottom: 2px gray solid;
     margin-bottom: 60px;
+  }
+
+  .hide{
+    display:none;
   }
 
   .footer-content p {
