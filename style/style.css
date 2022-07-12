@@ -8,6 +8,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: arial, sans-serif;
+  zoom: 97%;
 }
 
 .hide{
@@ -253,6 +254,7 @@ ul li {
   letter-spacing: 3%;
   line-height: 24px;
   transition: background 2s, color 2s;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -294,8 +296,8 @@ ul li {
 
 #experience {
   display: grid;
-  grid-template-columns: 327px;
-  grid-template-rows: 352px 352px 352px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
   gap: 24px;
   padding: 20px;
 }
@@ -303,21 +305,20 @@ ul li {
 .card-exp {
   background: #ebf0ee;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
   justify-content: space-around;
 }
 
 .profile-exp {
-  flex: 1.5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .content-exp {
-  flex: 1;
+  height: inherit;
 }
 
 .profile-exp .image {
@@ -425,7 +426,7 @@ textarea {
 }
 
 form {
-  background: url("/images/bg-foot.png");
+  background: url("../images/bg-foot.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   padding-bottom: 60px;
@@ -473,17 +474,17 @@ form {
   .logo {
     color: #2230d2;
     animation-name: rotate-logo;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
   }
 
   @keyframes rotate-logo {
     50% {
-      transform: scale(1.5) rotate(360deg) translate(0%);
+      transform: scale(1.2) rotate(50deg) translate(100%);
     }
 
     to {
-      transform: scale(1) rotate(720deg) translateX(50%);
+      transform: scale(1) rotate(270deg) translate(50%);
     }
   }
 
@@ -492,8 +493,9 @@ form {
   }
 
   #headline {
-    background-image: url("/images/desk-bg-headline.png");
+    background-image: url("../images/desk-bg-headline.png");
     background-repeat: no-repeat;
+    background-origin: padding-box;
     background-size: 100% 122vh;
     background-position: top center;
     background-attachment: scroll;
@@ -533,18 +535,22 @@ form {
     width: 30%;
   }
 
+  #works {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   #grid {
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 24px;
     justify-content: center;
-    margin: 0 142px;
   }
 
   #grid .card-container .card-image {
     height: 350px;
-    background-image: url("/images/bg-gray.jpg");
+    background-image: url("../images/bg-gray.jpg");
     background-size: cover;
     background-blend-mode: darken;
   }
@@ -559,7 +565,8 @@ form {
 
   .card-image img:hover,
   :focus {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    border-radius: 24px;
   }
 
   #grid .card-image img {
@@ -584,8 +591,8 @@ form {
     padding-top: 24px;
     margin-top: 40px;
     background-image:
-      url("/images/left-desk.png"),
-      url("/images/right-dest.jpg");
+      url("../images/left-desk.png"),
+      url("../images/right-dest.jpg");
     background-position: bottom left, top right;
   }
 
@@ -594,24 +601,22 @@ form {
     line-height: 42px;
   }
 
+  .skills {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   #experience {
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(1, 352px);
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     justify-content: center;
   }
 
   .card-exp {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .card-exp .profile-exp {
-    flex: 1;
-  }
-
-  .card-exp .content-exp {
-    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .content-exp ul li {
@@ -639,12 +644,11 @@ form {
     justify-content: center;
     align-items: center;
     padding: 0 134px;
-    background-image: url("/images/left.png"), url("/images/center.png"), url("/images/right.png");
+    background-image: url("../images/left.png"), url("../images/center.png"), url("../images/right.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: bottom left, 400px 300px, bottom right;
-    padding-bottom: 50px;
-    border-bottom: 2px gray solid;
-    margin-bottom: 60px;
+    background-position: bottom left, 300px 260px, bottom right;
+    border-bottom: 3px rgb(110, 110, 110) solid;
+    margin-bottom: 20px;
   }
 
   .hide{
@@ -653,6 +657,7 @@ form {
 
   .footer-content p {
     padding-bottom: 40px;
+    font-size: 1.9rem;
   }
 
   footer#contact .social-account ul {
@@ -661,7 +666,7 @@ form {
   }
 
   footer#contact .social-account ul li a i {
-    font-size: 30px;
+    font-size: 22px;
     padding: 0 10px;
   }
 

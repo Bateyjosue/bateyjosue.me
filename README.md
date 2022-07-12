@@ -30,6 +30,9 @@ the project was debug and format using linters html & css [more about linters](h
 
 after pushing the changes on github go in code tab and then click on Merge pull request > New Pull request after then your have to let github action proess and check for changes
 
+### Live Demo
+[portfolio](https://bateyjosue.github.io/mobile-version-skeleton/)
+
 ## Authors
 
 👤 **Author**
