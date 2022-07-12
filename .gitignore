@@ -108,3 +108,5 @@ dist
 .package.json
 
 .vscode/
+
+style/.sass-cache
