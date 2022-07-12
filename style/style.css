@@ -11,8 +11,8 @@
   zoom: 97%;
 }
 
-.hide{
-  display:none;
+.hide {
+  display: none;
 }
 
 /* Toolbar */
@@ -651,8 +651,8 @@ form {
     margin-bottom: 20px;
   }
 
-  .hide{
-    display:none;
+  .hide {
+    display: none;
   }
 
   .footer-content p {
