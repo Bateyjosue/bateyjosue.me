@@ -11,6 +11,10 @@
   zoom: 97%;
 }
 
+.hide {
+  display: none;
+}
+
 /* Toolbar */
 header {
   display: flex;
@@ -241,7 +245,7 @@ ul li {
   height: 48px;
   border: 0;
   border-radius: 4px;
-  background: #36b37f;
+  background: #29e697;
   color: #fff;
   text-align: center;
   font-style: normal;
@@ -340,7 +344,7 @@ ul li {
   padding: 12px;
   border-radius: 8px;
   background: #fff;
-  color: #36b37e;
+  color: #29986a;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -645,6 +649,10 @@ form {
     background-position: bottom left, 300px 260px, bottom right;
     border-bottom: 3px rgb(110, 110, 110) solid;
     margin-bottom: 20px;
+  }
+
+  .hide {
+    display: none;
   }
 
   .footer-content p {
