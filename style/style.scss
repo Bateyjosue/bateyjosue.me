@@ -396,24 +396,6 @@ footer {
     text-align: center;
   }
 
-  input {
-    height: 48px;
-  }
-  
-  textarea {
-    height: 114px;
-    outline-color: var(--color-primary);
-  }
-  
-  input:focus {
-    outline: none !important;
-    border: 1px solid var(--color-primary);
-  }
-  
-  textarea:focus {
-    outline: none;
-    border: 1px solid var(--color-primary);
-  }
   input,
   textarea {
     font-style: normal;
@@ -424,6 +406,25 @@ footer {
     border-radius: 4px;
     width: 100%;
     padding: 16px;
+  }
+  
+  input {
+    height: 48px;
+  }
+
+  input:focus {
+    outline: none !important;
+    border: 1px solid var(--color-primary);
+  }
+
+  textarea {
+    height: 114px;
+    outline-color: var(--color-primary);
+  }
+
+  textarea:focus {
+    outline: none;
+    border: 1px solid var(--color-primary);
   }
 }
 
@@ -577,18 +578,13 @@ form {
       background-blend-mode: darken;
     }
   }
-
-
+  
   hr {
     display: none;
   }
 
-  .title {
-    margin-bottom: 24px;
-  }
-
-  .card-image img:hover,
-  :focus {
+  :focus,
+  .card-image img:hover {
     transform: scale(1.1);
     border-radius: 24px;
     
@@ -599,6 +595,10 @@ form {
       opacity: 0.7;
       background: var(--color-primary);
     }
+
+  .title {
+    margin-bottom: 24px;
+  }
   }
 
 
