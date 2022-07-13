@@ -434,7 +434,7 @@ form {
   }
   nav ul a {
     margin-bottom: 20px;
-    color: #0a2759;
+    color: var(--color-secondary);
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
@@ -448,13 +448,8 @@ form {
     right: 0;
     left: 0;
   }
-  .logo a {
-    font-size: 30px;
-    padding: 24px;
-    text-decoration: overline;
-  }
   .logo {
-    color: #2230d2;
+    color: var(--color-secondary);
     -webkit-animation-name: rotate-logo;
             animation-name: rotate-logo;
     -webkit-animation-duration: 5s;
@@ -462,20 +457,25 @@ form {
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
   }
+  .logo a {
+    font-size: 30px;
+    padding: 24px;
+    text-decoration: overline;
+  }
   @-webkit-keyframes rotate-logo {
     50% {
-      transform: scale(1.2) rotate(50deg) translate(100%);
+      transform: scale(1.2) rotate(150deg) translate(-50%);
     }
     to {
-      transform: scale(1) rotate(270deg) translate(50%);
+      transform: scale(1) rotate(270deg) translate(70%);
     }
   }
   @keyframes rotate-logo {
     50% {
-      transform: scale(1.2) rotate(50deg) translate(100%);
+      transform: scale(1.2) rotate(150deg) translate(-50%);
     }
     to {
-      transform: scale(1) rotate(270deg) translate(50%);
+      transform: scale(1) rotate(270deg) translate(70%);
     }
   }
   main {
@@ -510,7 +510,7 @@ h1 {
     line-height: 32px;
     font-style: normal;
     text-align: center;
-    color: #172b4b;
+    color: var(--color-secondary);
   }
   #headline > div + .social-account ul {
     margin-top: 20px;
@@ -547,12 +547,13 @@ h1 {
     transform: scale(1.1);
     border-radius: 24px;
   }
-  #grid .card-image img {
+  .card-image img:hover .card-image img,
+:focus .card-image img {
     height: 100%;
     width: 100%;
     border-radius: 8px 8px 0 0;
     opacity: 0.7;
-    background: rgb(44, 207, 139);
+    background: var(--color-primary);
   }
   .card-body .card-title h2 {
     font-weight: 800;
@@ -611,7 +612,7 @@ h1 {
     background-image: url("../images/left.png"), url("../images/center.png"), url("../images/right.png");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom left, 300px 260px, bottom right;
-    border-bottom: 3px rgb(110, 110, 110) solid;
+    border-bottom: 3px solid var(--color-gray);
     margin-bottom: 20px;
   }
   .hide {
