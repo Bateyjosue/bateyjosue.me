@@ -14,17 +14,17 @@
 - formspree service to collect data
 
 ## Getting Started
-![](https://img.shields.io/github/issues/Bateyjosue/mobile-version-skeleton)
-![](https://img.shields.io/github/forks/Bateyjosue/mobile-version-skeleton)
-![](https://img.shields.io/github/stars/Bateyjosue/mobile-version-skeleton)
-![](https://img.shields.io/github/license/Bateyjosue/mobile-version-skeleton)
-![]([https://img.shields.io/github/issues/Bateyjosue/mobile-version-skeleton](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FBateyjosue%2Fmobile-version-skeleton))
+![](https://img.shields.io/github/issues/Bateyjosue/bateyjosue.me)
+![](https://img.shields.io/github/forks/Bateyjosue/bateyjosue.me)
+![](https://img.shields.io/github/stars/Bateyjosue/bateyjosue.me)
+![](https://img.shields.io/github/license/Bateyjosue/bateyjosue.me)
+![]([https://img.shields.io/github/issues/Bateyjosue/bateyjosue.me](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FBateyjosue%2Fbateyjosue.me))
 
 ### Prerequisites
 
 ### Setup
 
-<code> git clone https://github.com/Bateyjosue/mobile-version-skeleton</code>, and the dive into the repository folder ```cd <repo name>```
+<code> git clone https://github.com/Bateyjosue/bateyjosue.me/</code>, and the dive into the repository folder ```cd <repo name>```
 From there you can open the index.html file in your prefered browser to se the result...
 
 ### Usage
@@ -36,7 +36,7 @@ the project was debug and format using linters html & css [more about linters](h
 **[-]** Install **Style lint** for CSS debug/format ```npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x``` then add the configure file ```[ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.stylelintrc.json```, then run the diagnosis using ```npx stylelint "**/*.{css, scss}"``` and the, ```npx stylelint "**/*.{css, scss}" --fix``` to fix detected errors
 
 ### Live Demo
-[joshbatey:live demo](https://bateyjosue.github.io/mobile-version-skeleton/)
+[joshbatey:live demo](https://bateyjosue.github.io/bateyjosue.me/)
 
 ## Authors
 
