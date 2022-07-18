@@ -49,6 +49,40 @@ header {
   height: 4rem;
 }
 
+ul.m-menu{
+  position: fixed;
+  padding:2rem;
+}
+
+.m-menu{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3A4A42;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  /* visibility: hidden; */
+}
+
+.m-navlink{ 
+  color: #3A4A42;
+  text-decoration: none;
+}
+
+.close-btn{
+  color: #3A4A42;
+  align-self: flex-end;
+  padding-right: 4rem;
+}
+
+
 header .logo {
   display: block;
 }
