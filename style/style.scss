@@ -48,6 +48,24 @@ ul li {
   filter: blur(7px);
 }
 
+.social-account ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.social-account {
+  ul li {
+    margin-left: 15px;
+  }
+
+  a i {
+    color: var(--color-gray);
+    font-size: 22px;
+  }
+}
+
 /* Toolbar */
 header {
   display: flex;
@@ -71,6 +89,108 @@ header .logo {
   line-height: 28px;
   text-decoration: none;
   color: var(--color-black);
+}
+
+.arrow-down button {
+  border: 1px solid var(--bg-primary);
+  background: var(--color-white);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+  margin: auto;
+  margin-top: 30px;
+  
+  button i {
+    color: var(--color-gray);
+    font-weight: 400;
+    width: 20px;
+  }
+}
+
+.card-content ul li {
+  background: var(--bg-primary);
+  padding: 8px 7px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--color-secondary);
+}
+
+.content-exp {
+  height: inherit;
+  
+  h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  ul li {
+    padding: 12px;
+    border-radius: 8px;
+    background: var(--color-white);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.contact-form { 
+  ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 24px;
+  }
+  
+  ul li {
+    width: 100%;
+  }
+
+  ul li:nth-child(4) {
+    text-align: center;
+  }
+
+  input,
+  textarea {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    border: 1px solid var(--bg-primary);
+    border-radius: 4px;
+    width: 100%;
+    padding: 16px;
+  }
+  
+  input {
+    height: 48px;
+  }
+
+  input:focus {
+    outline: none !important;
+    border: 1px solid var(--color-primary);
+  }
+
+  textarea {
+    height: 114px;
+    outline-color: var(--color-primary);
+  }
+
+  textarea:focus {
+    outline: none;
+    border: 1px solid var(--color-primary);
+  }
 }
 
 nav {
@@ -185,45 +305,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-.social-account ul {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: 0 auto;
-}
-
-
-.social-account {
-  ul li {
-    margin-left: 15px;
-  }
-
-  a i {
-    color: var(--color-gray);
-    font-size: 22px;
-  }
-}
-
-
-.arrow-down button {
-  border: 1px solid var(--bg-primary);
-  background: var(--color-white);
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 32px;
-  margin: auto;
-  margin-top: 30px;
-  
-  button i {
-    color: var(--color-gray);
-    font-weight: 400;
-    width: 20px;
-  }
-}
-
 
 #works {
   padding: 16px;
@@ -289,17 +370,6 @@ h1 {
     color: var(--color-secondary);
     letter-spacing: 0.04em;
   }
-}
-
-.card-content ul li {
-  background: var(--bg-primary);
-  padding: 8px 7px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: var(--color-secondary);
 }
 
 .card-button {
@@ -395,83 +465,11 @@ h1 {
   }
 }
 
-.content-exp {
-  height: inherit;
-  
-  h3 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    color: var(--color-secondary);
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  ul li {
-    padding: 12px;
-    border-radius: 8px;
-    background: var(--color-white);
-    color: var(--color-primary);
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-  }
-}
-
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-}
-
-.contact-form { 
-  ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-    padding: 24px;
-  }
-  
-  ul li {
-    width: 100%;
-  }
-
-  ul li:nth-child(4) {
-    text-align: center;
-  }
-
-  input,
-  textarea {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    border: 1px solid var(--bg-primary);
-    border-radius: 4px;
-    width: 100%;
-    padding: 16px;
-  }
-  
-  input {
-    height: 48px;
-  }
-
-  input:focus {
-    outline: none !important;
-    border: 1px solid var(--color-primary);
-  }
-
-  textarea {
-    height: 114px;
-    outline-color: var(--color-primary);
-  }
-
-  textarea:focus {
-    outline: none;
-    border: 1px solid var(--color-primary);
-  }
 }
 
 .footer-social-account {
