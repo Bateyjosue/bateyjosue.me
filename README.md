@@ -12,6 +12,7 @@
 - CSS & CSS Preproccessor SCSS
 - Bootstrap Icon
 - formspree service to collect data
+- js DOM API
 
 ## Getting Started
 ![](https://img.shields.io/github/issues/Bateyjosue/bateyjosue.me)
@@ -35,6 +36,8 @@ the project was debug and format using linters html & css [more about linters](h
 
 **[-]** Install **Style lint** for CSS debug/format ```npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x``` then add the configure file ```[ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.stylelintrc.json```, then run the diagnosis using ```npx stylelint "**/*.{css, scss}"``` and the, ```npx stylelint "**/*.{css, scss}" --fix``` to fix detected errors
 
+**[-]** Install **Eslint** for js format checking ```npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x```, then add configuration file with ``` [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json```, After you can check for eslint issues with  ```npx eslint .```
+
 ### Live Demo
 [joshbatey:live demo](https://bateyjosue.github.io/bateyjosue.me/)
 
@@ -56,6 +59,11 @@ And:
     👤 **Collaborator-2**
     **Surafel GetachewT**
     - GitHub: [@githubhandle](https://github.com/SurafelGetachewT)
+    
+& :
+   👤 **Collaborator-3**
+    **Juan Diaz**
+    - GitHub: [@githubhandle](https://github.com/juanmanuelbyc)
     
 For their efforts make for the project to run successfully :)
 
