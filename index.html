@@ -1,51 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mobile skeleton</title>
-  <!-- Bootrap Icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./style/style.css">
-</head>
-<body class="">
-  <header>
-    <div class="logo">
-      <a href="index.html">JB Ish-</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mobile skeleton</title>
+    <!-- Bootrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body class="">
+    <div class="blurry-gray">
     </div>
-    <nav>
-      <ul class="desk-menu">
-        <li><a href="#works">Portfolio</a></li>
-        <li><a href="#about-myself">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="menu-humberger">
-        <a href="#" class="btn-menu" id="show-menu"><i class="bi bi-list"></i></a>
+    <header>
+      <div class="logo">
+        <a href="index.html">JB Ish-</a>
       </div>
-      <ul class="mobile-menu">
-        <li class="btn-close" id="close-menu"><a href=""><i class="bi bi-x-lg"></i></a></li>
-        <li class=""><a href="#works">Portfolio</a></li>
-        <li class=""><a href="#about-myself">About</a></li>
-        <li class=""><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="headline">
-      <div class="fonts intro">
-        <h1>
-          Hey there. I'm Josh
-        </h1>
-        <h2 class="fonts bg">
-          I'm a Software Engineer
-        </h2>
+      <nav>
+        <ul class="desk-menu">
+          <li><a href="#works">Portfolio</a></li>
+          <li><a href="#about-myself">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-humberger">
+          <a href="#" class="btn-menu" id="show-menu"
+            ><i class="bi bi-list"></i
+          ></a>
+        </div>
+        <ul class="mobile-menu">
+          <li class="btn-close" id="close-menu">
+            <a href=""><i class="bi bi-x-lg"></i></a>
+          </li>
+          <li class=""><a href="#works">Portfolio</a></li>
+          <li class=""><a href="#about-myself">About</a></li>
+          <li class=""><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="headline">
+        <div class="fonts intro">
+          <h1>Hey there. I'm Josh</h1>
+          <h2 class="fonts bg">I'm a Software Engineer</h2>
+        </div>
+        <div class="headline-text more pad">
+          I can help you build a product, feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hesitate to contact me.
+        </div>
+        <div class="social-account">
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com/JosueBatey"
+                aria-label="Twitter Icon"
+              >
+                <div class="hide">Twitter Icon</div>
+                <i class="bi bi-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/josue-ishara/"
+                aria-label="LinkedIn Icon"
+              >
+                <div class="hide">LinkedIn Icon</div>
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ish.josh_/"
+                aria-label="Instagram Icon"
+              >
+                <div class="hide">Instagram Icon</div>
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/batey.joshua.1/"
+                aria-label="FB Icon"
+              >
+                <div class="hide">FB Icon</div>
+                <p class="hide">hide</p>
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Bateyjosue" aria-label="Github Icon">
+                <div class="hide">GitHub Icon</div>
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="arrow-down">
+          <button type="button" aria-label="Arrow down">
+            <i class="hide">Arror Down</i>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+        </div>
+      </section>
+      <section id="works">
+        <h1 class="title">My Recent Works</h1>
+        <hr />
+        <div id="grid">
+          
+        </div>
+        <div class="modal">
+          
+        </div>
+      </section>
+      <section id="about-myself">
+        <h2 class="title">About me</h2>
+        <p class="more">
+          I can help you buils a product, feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hesitate to contact me.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/1qWnkSfqTd69eCjq9x322W34GknVAYSKg/view?usp=sharing"
+          class="button"
+        >
+          Get My Resune
+        </a>
+      </section>
+      <section class="skills">
+        <ul id="experience">
+          <li class="card-exp">
+            <div class="profile-exp">
+              <div class="image">
+                <img
+                  src="./images/Language.png"
+                  alt="Language Image"
+                  height="44"
+                  width="44"
+                />
+              </div>
+            </div>
+            <div class="content-exp">
+              <h3>Languages</h3>
+              <ul>
+                <li>Python</li>
+                <li>Javascript</li>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>C</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+          </li>
+          <li class="card-exp">
+            <div class="profile-exp">
+              <div class="image">
+                <img
+                  src="images/framework.png"
+                  alt="Framework Image"
+                  height="44"
+                  width="44"
+                />
+              </div>
+            </div>
+            <div class="content-exp">
+              <h3>Frameworks</h3>
+              <ul>
+                <li>Django</li>
+                <li>Bootstrap</li>
+                <li>sass</li>
+                <li>OpenCV</li>
+              </ul>
+            </div>
+          </li>
+          <li class="card-exp">
+            <div class="profile-exp">
+              <div class="image">
+                <img
+                  src="images/tools.png"
+                  alt="Tools Image"
+                  height="44"
+                  width="44"
+                />
+              </div>
+            </div>
+            <div class="content-exp">
+              <h3>Skills</h3>
+              <ul>
+                <li>GitHub</li>
+                <li>Codepen</li>
+                <li>Trello</li>
+                <li>Bash</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Postman</li>
+                <li>Heroku</li>
+                <li>Hackerrank</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="footer-content">
+        <p class="title pad">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </p>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/meqnbakq" method="POST">
+            <ul>
+              <li>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full name"
+                  maxlength="30"
+                  aria-label="name"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  type="email"
+                  name="email"
+                  aria-label="email"
+                  placeholder="Email address"
+                  required
+                />
+              </li>
+              <li class="text-border">
+                <textarea
+                  aria-label="Message to be sent"
+                  required
+                  maxlength="500"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter text here"
+                ></textarea>
+              </li>
+              <li>
+                <button
+                  type="submit"
+                  class="button"
+                  aria-label="Get in Touch Button"
+                >
+                  Get in touch
+                </button>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
-      <div class="headline-text more pad">
-        I can help you build a product, feature or website Look through some of my work and experience!
-        If you like what you see and have a project you need coded, don't hesitate to contact me.
-      </div>
-      <div class="social-account">
+      <div class="social-account footer-social-account">
         <ul>
           <li>
             <a href="https://twitter.com/JosueBatey" aria-label="Twitter Icon">
@@ -54,19 +267,28 @@
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/josue-ishara/" aria-label="LinkedIn Icon">
+            <a
+              href="https://www.linkedin.com/in/josue-ishara/"
+              aria-label="LinkedIn Icon"
+            >
               <div class="hide">LinkedIn Icon</div>
               <i class="bi bi-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/ish.josh_/" aria-label="Instagram Icon">
+            <a
+              href="https://www.instagram.com/ish.josh_/"
+              aria-label="Instagram Icon"
+            >
               <div class="hide">Instagram Icon</div>
               <i class="bi bi-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/batey.joshua.1/" aria-label="FB Icon">
+            <a
+              href="https://www.facebook.com/batey.joshua.1/"
+              aria-label="FB Icon"
+            >
               <div class="hide">FB Icon</div>
               <p class="hide">hide</p>
               <i class="bi bi-facebook"></i>
@@ -79,309 +301,9 @@
             </a>
           </li>
         </ul>
+        <p class="footer-email pad">josuebatey19@gmail.com</p>
       </div>
-      <div class="arrow-down">
-        <button type="button" aria-label="Arrow down">
-          <i class="hide">Arror Down</i>
-          <i class="bi bi-chevron-down"></i>
-        </button>
-      </div>
-    </section>
-    <section id="works">
-      <h1 class="title">
-        My Recent Works
-      </h1>
-      <hr>
-      <div id="grid">
-        <div class="card-container">
-          <div class="card-image" >
-            <img src="./images/bg-gray.jpg" alt="gray Image">
-          </div>
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Multi-Post Stories Gain+Glory</h2>
-            </div>
-            <div class="card-content">
-              <ul>
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Javascript</li>
-                <li>html</li>
-              </ul>
-            </div>
-            <div class="card-button">
-              <button type="button" class="button">
-                See Project
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="card-image" >
-            <img src="./images/bg-gray.jpg" alt="gray Image">
-          </div>
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Multi-Post Stories Gain+Glory</h2>
-            </div>
-            <div class="card-content">
-              <ul>
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Javascript</li>
-                <li>html</li>
-              </ul>
-            </div>
-            <div class="card-button">
-              <button type="button" class="button" aria-label="See Project Button ">
-                See Project
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="card-image" >
-            <img src="./images/bg-gray.jpg" alt="gray Image">
-          </div>
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Multi-Post Stories Gain+Glory</h2>
-            </div>
-            <div class="card-content">
-              <ul>
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Javascript</li>
-                <li>html</li>
-              </ul>
-            </div>
-            <div class="card-button">
-              <button type="button" class="button" aria-label="See Project Button ">
-                See Project
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="card-image" >
-            <img src="./images/bg-gray.jpg" alt="gray Image">
-          </div>
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Multi-Post Stories Gain+Glory</h2>
-            </div>
-            <div class="card-content">
-              <ul>
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Javascript</li>
-                <li>html</li>
-              </ul>
-            </div>
-            <div class="card-button">
-              <button type="button" class="button" aria-label="See Project Button ">
-                See Project
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="card-image" >
-            <img src="./images/bg-gray.jpg" alt="gray Image">
-          </div>
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Multi-Post Stories Gain+Glory</h2>
-            </div>
-            <div class="card-content">
-              <ul>
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Javascript</li>
-                <li>html</li>
-              </ul>
-            </div>
-            <div class="card-button">
-              <button type="button" class="button" aria-label="See Project Button ">
-                See Project
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="card-image" >
-            <img src="./images/bg-gray.jpg" alt="gray Image">
-          </div>
-          <div class="card-body">
-            <div class="card-title">
-              <h2>Multi-Post Stories Gain+Glory</h2>
-            </div>
-            <div class="card-content">
-              <ul>
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>Javascript</li>
-                <li>html</li>
-              </ul>
-            </div>
-            <div class="card-button">
-              <button type="button" class="button" aria-label="See Project Button ">
-                See Project
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about-myself">
-      <h2 class="title">
-        About me
-      </h2>
-      <p class="more">
-        I can help you buils a product, feature or website Look through some of my work and
-        experience! If you like what you see and have a project you need coded, don't
-        hesitate to contact me.
-      </p>
-        <a href="https://drive.google.com/file/d/1qWnkSfqTd69eCjq9x322W34GknVAYSKg/view?usp=sharing" class="button">
-          Get My Resune
-        </a>
-    </section>
-    <section class="skills">
-      <ul id="experience">
-        <li class="card-exp">
-          <div class="profile-exp">
-            <div class="image">
-              <img src="./images/Language.png" alt="Language Image" height="44" width="44">
-            </div>
-          </div>
-          <div class="content-exp">
-            <h3>
-              Languages
-            </h3>
-            <ul>
-              <li>Python</li>
-              <li>Javascript</li>
-              <li>Html</li>
-              <li>CSS</li>
-              <li>C</li>
-              <li>Java</li>
-              <li>PHP</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-        </li>
-        <li class="card-exp">
-          <div class="profile-exp">
-            <div class="image">
-              <img src="images/framework.png" alt="Framework Image" height="44" width="44">
-            </div>
-          </div>
-          <div class="content-exp">
-            <h3>
-              Frameworks
-            </h3>
-            <ul>
-              <li>Django</li>
-              <li>Bootstrap</li>
-              <li>sass</li>
-              <li>OpenCV</li>
-            </ul>
-          </div>
-        </li>
-        <li class="card-exp">
-          <div class="profile-exp">
-            <div class="image">
-              <img src="images/tools.png" alt="Tools Image" height="44" width="44">
-            </div>
-          </div>
-          <div class="content-exp">
-            <h3>
-              Skills
-            </h3>
-            <ul>
-              <li>GitHub</li>
-              <li>Codepen</li>
-              <li>Trello</li>
-              <li>Bash</li>
-              <li>Figma</li>
-              <li>Photoshop</li>
-              <li>Postman</li>
-              <li>Heroku</li>
-              <li>Hackerrank</li>
-            </ul>
-          </div>
-        </li>
-      </ul> 
-    </section>
-  </main>
-  <footer id="contact">
-    <div class="footer-content">
-      <p class="title pad">
-        I'm always interested in hearing about new projects, so if you'd like
-        to chat please get in touch.
-      </p>
-      <div class="contact-form">
-        <form action="https://formspree.io/f/meqnbakq" method="POST" >
-          <ul>
-            <li>
-              <input type="text" name="name" placeholder="Full name" 
-                maxlength="30" aria-label="name" required>
-            </li>
-            <li>
-              <input type="email" name="email" aria-label="email" placeholder="Email address" required>
-            </li>
-            <li class="text-border">
-              <textarea aria-label="Message to be sent" required maxlength="500" name="message" cols="30" rows="10" 
-                placeholder="Enter text here"></textarea>
-            </li>
-            <li>
-              <button type="submit" class="button" aria-label="Get in Touch Button">
-                Get in touch
-              </button>
-            </li>
-          </ul>
-        </form>
-      </div>
-    </div>
-    <div class="social-account footer-social-account">
-      <ul>
-        <li>
-          <a href="https://twitter.com/JosueBatey" aria-label="Twitter Icon">
-            <div class="hide">Twitter Icon</div>
-            <i class="bi bi-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/josue-ishara/" aria-label="LinkedIn Icon">
-            <div class="hide">LinkedIn Icon</div>
-            <i class="bi bi-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/ish.josh_/" aria-label="Instagram Icon">
-            <div class="hide">Instagram Icon</div>
-            <i class="bi bi-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/batey.joshua.1/" aria-label="FB Icon">
-            <div class="hide">FB Icon</div>
-            <p class="hide">hide</p>
-            <i class="bi bi-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Bateyjosue" aria-label="Github Icon">
-            <div class="hide">GitHub Icon</div>
-            <i class="bi bi-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="footer-email pad">
-        josuebatey19@gmail.com
-      </p>
-    </div>
-  </footer>
-<script src="js/apps.js"></script>
-</body>
+    </footer>
+    <script src="js/apps.js" async="true"></script>
+  </body>
 </html>
