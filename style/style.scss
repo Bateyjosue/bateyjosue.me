@@ -611,10 +611,10 @@ form {
   background-position: right bottom;
   padding-bottom: 60px;
 
-  .email-error{
+  .email-error {
     color: red;
     padding: 0.2rem 0.2rem;
-    width:50%;
+    width: 50%;
     float: right;
     margin-top: 1.2rem;
   }
@@ -940,10 +940,11 @@ form {
 
   form {
     background-image: url("");
-    .email-error{
+
+    .email-error {
       color: red;
       padding: 0.2rem 0.2rem;
-      width:50%;
+      width: 50%;
       float: right;
       margin-top: 1.2rem;
     }
