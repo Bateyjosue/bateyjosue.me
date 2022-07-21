@@ -163,6 +163,6 @@ form.addEventListener('submit', (event) => {
     form.submit();
   } else {
     emailError.style.display = 'flex';
-    emailError.innerText = 'Email Should be lowercase!!!';
+    emailError.innerText = 'Please enter your email using lowercase!';
   }
 });
