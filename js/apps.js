@@ -113,6 +113,36 @@ const detailsBtn = document.querySelectorAll('#grid .card-container .card-button
 const modalDetails = document.querySelector('#works .modal');
 const blurryGray = document.querySelector('.blurry-gray');
 
+const modalPopup = (index) => {
+  modalDetails.innerHTML = `
+    <div class="modal-image">
+      <span class="modal-close-btn"><i class="bi bi-x-lg"></i></span>
+      <img src="${projectDetails[index].featuredImageUrl}" alt="">
+    </div>
+    <div class="modal-body card-content">
+      <h2 class="title">${projectDetails[index].name}</h2>
+      <ul>
+        ${projectDetails[index].technologies.map((lang) => `<li>${lang} </li>`).join('')}
+      </ul>
+      <p class="more">
+      ${projectDetails[index].description}
+      </p>
+    </div>
+    <div class="modal-button">
+      <a href="" class="button">See Live <i class="bi bi-arrow-up-right-circle"></i></a>
+      <a href="" class="button">See Source <i class="bi bi-github"></i></a>
+    </div>
+  `;
+
+  const modalCloseBtn = document.querySelectorAll('#works .modal .modal-image .modal-close-btn');
+  modalCloseBtn.forEach((el) => {
+    el.addEventListener('click', () => {
+      modalDetails.style.visibility = 'hidden';
+      blurryGray.style.visibility = 'hidden';
+    });
+  });
+};
+
 detailsBtn.forEach((el) => {
   el.addEventListener('click', () => {
     modalDetails.style.visibility = 'visible';
