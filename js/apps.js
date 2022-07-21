@@ -2,7 +2,6 @@ const showMenu = document.querySelector('#show-menu');
 const closeMenu = document.querySelector('#close-menu');
 const menu = document.querySelector('ul.mobile-menu');
 const al = document.querySelectorAll('section');
-// const alModal = document.querySelectorAll(' :not(#works .modal)');
 const menuList = document.querySelectorAll('ul.mobile-menu li');
 
 showMenu.addEventListener('click', () => {
