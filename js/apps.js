@@ -151,7 +151,3 @@ detailsBtn.forEach((el) => {
     modalPopup(position - 1);
   });
 });
-
-// projectDetails.forEach((images) => {
-//   document.querySelectorAll('.modal .modal-image img').src = `'${images.featuredImageUrl}'`;
-// });
