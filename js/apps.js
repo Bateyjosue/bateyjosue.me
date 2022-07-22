@@ -26,7 +26,7 @@ menuList.forEach((el) => {
   });
 });
 
-const projectDetails = [
+const modalDetails = [
   {
     id: 1,
     name: 'Multi-Post Stories Gain+Glory',
