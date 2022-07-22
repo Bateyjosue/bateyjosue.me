@@ -20,8 +20,8 @@ menuList.forEach((el) => {
   el.addEventListener('click', () => {
     menu.style.visibility = 'hidden';
     al.forEach((el) => {
-      el.classList.remove('blur');
-      el.style.backgroundColor = 'transparent';
+      el.classLists.remove('blur');
+      el.style.background-color = 'transparent';
     });
   });
 });
