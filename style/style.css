@@ -605,6 +605,14 @@ form {
   padding-bottom: 60px;
 }
 
+form .email-error {
+  color: red;
+  padding: 0.2rem 0.2rem;
+  width: 50%;
+  float: right;
+  margin-top: 1.2rem;
+}
+
 /* Tablet */
 
 /* Desktop */
@@ -935,6 +943,14 @@ form {
 
   form {
     background-image: url("");
+  }
+
+  form .email-error {
+    color: red;
+    padding: 0.2rem 0.2rem;
+    width: 50%;
+    float: right;
+    margin-top: 1.2rem;
   }
 
   footer {

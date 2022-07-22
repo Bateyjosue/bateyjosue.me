@@ -150,3 +150,19 @@ detailsBtn.forEach((el) => {
     modalPopup(position - 1);
   });
 });
+
+const emailError = document.querySelector('.contact-form form ul li .email-error');
+const form = document.querySelector('.contact-form form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const email = document.querySelector('.contact-form form ul li input[type="email"]').value;
+  if (email === email.toLowerCase()) {
+    emailError.innerText = '';
+    emailError.style.display = 'none';
+    form.submit();
+  } else {
+    emailError.style.display = 'flex';
+    emailError.innerText = 'Please enter your email using lowercase!';
+  }
+});

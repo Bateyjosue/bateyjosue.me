@@ -610,6 +610,14 @@ form {
   background-repeat: no-repeat;
   background-position: right bottom;
   padding-bottom: 60px;
+
+  .email-error {
+    color: red;
+    padding: 0.2rem 0.2rem;
+    width: 50%;
+    float: right;
+    margin-top: 1.2rem;
+  }
 }
 
 /* Tablet */
@@ -932,6 +940,14 @@ form {
 
   form {
     background-image: url("");
+
+    .email-error {
+      color: red;
+      padding: 0.2rem 0.2rem;
+      width: 50%;
+      float: right;
+      margin-top: 1.2rem;
+    }
   }
 
   footer {
