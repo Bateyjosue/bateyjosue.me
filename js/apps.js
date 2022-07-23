@@ -67,7 +67,7 @@ const projectDetails = [
     id: 5,
     name: 'Multi-Post Stories Gain+Glory',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    featuredImageUrl: '/images/modal-img.png',
+    featuredImageUrl: './images/modal-img.png',
     technologies: ['Ruby_on_rails', 'HTM', 'CSS', 'React'],
     liveVersion: 'github.io/Bateyjosue/bateyjosue.me',
     sourceURL: 'https://github.com/Bateyjosue/bateyjosue.me',
@@ -76,7 +76,7 @@ const projectDetails = [
     id: 6,
     name: 'Multi-Post Stories Gain+Glory',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    featuredImageUrl: '/images/modal-img.png',
+    featuredImageUrl: './images/modal-img.png',
     technologies: ['Django', 'HTM', 'CSS', 'React'],
     liveVersion: 'github.io/Bateyjosue/bateyjosue.me',
     sourceURL: 'https://github.com/Bateyjosue/bateyjosue.me',
@@ -128,8 +128,8 @@ const modalPopup = (index) => {
       </p>
     </div>
     <div class="modal-button">
-      <a href="" class="button">See Live <i class="bi bi-arrow-up-right-circle"></i></a>
-      <a href="" class="button">See Source <i class="bi bi-github"></i></a>
+      <a href="${projectDetails[index].liveVersion}" class="button">See Live <i class="bi bi-arrow-up-right-circle"></i></a>
+      <a href="${projectDetails[index].sourceURL}" class="button">See Source <i class="bi bi-github"></i></a>
     </div>
   `;
 
