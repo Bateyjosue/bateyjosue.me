@@ -272,7 +272,7 @@ nav .mobile-menu li:nth-child(1) a i {
 
 /* Headline */
 main {
-  background-image: url("/images/bg1.png");
+  background-image: url("../images/bg1.png");
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
