@@ -90,6 +90,8 @@ header {
   right: 0;
   left: 0;
   z-index: 2;
+  background: var(--color-white);
+
 }
 
 header .logo {
@@ -276,19 +278,21 @@ nav {
 
 /* Headline */
 main {
-  background-image: url("/images/bg1.png");
+  background-image: url("../images/bg1.png");
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 #headline {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 24px;
-
+  gap: 1.4rem;
+  h1{
+    margin-top: 2rem;
+  }
   .intro {
     color: var(--color-secondary);
     padding-top: 60px;
@@ -300,6 +304,16 @@ main {
 
   .headline-text {
     margin-top: 2rem;
+    letter-spacing: 0.04rem;
+    font-size: 1.5rem;
+  }
+
+  .social-account{
+    margin-top: 2rem;
+  }
+
+  .arrow-down{
+    margin: 3rem 2rem 0rem;
   }
 }
 
@@ -430,9 +444,7 @@ h1 {
   align-items: center;
   gap: 20px;
   position: relative;
-  background:
-    url("../images/frameup.png"),
-    url("../images/Framed.png");
+  background: url("../images/frameup.png"), url("../images/Framed.png");
   background-repeat: no-repeat, no-repeat;
   background-position: top right, bottom left;
 
@@ -909,8 +921,7 @@ form {
   #about-myself {
     padding-top: 24px;
     margin-top: 40px;
-    background-image:
-      url("../images/left-desk.png"),
+    background-image: url("../images/left-desk.png"),
       url("../images/right-dest.jpg");
     background-position: bottom left, top right;
 
@@ -962,7 +973,8 @@ form {
     justify-content: center;
     align-items: center;
     padding: 0 134px;
-    background-image: url("../images/left.png"), url("../images/center.png"), url("../images/right.png");
+    background-image: url("../images/left.png"), url("../images/center.png"),
+      url("../images/right.png");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom left, 300px 260px, bottom right;
     border-bottom: 3px solid var(--color-gray);
