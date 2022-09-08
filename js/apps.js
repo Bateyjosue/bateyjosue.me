@@ -81,6 +81,16 @@ const projectDetails = [
     liveVersion: 'https://github.com/Bateyjosue/bakery',
     sourceURL: 'https://github.com/Bateyjosue/bakery',
   },
+  
+  {
+    id: 7,
+    name: 'Math Magician',
+    description: "Math magicians is a website for all fans of mathematics, where people can Make simple calculations and read a random math-related quote.",
+    featuredImageUrl: 'https://github.com/Bateyjosue/math_magician/blob/dev/src/images/FireShot%20Capture%20001%20-%20Multi%20Device%20Website%20Mockup%20Generator%20-%20techsini.com.png',
+    technologies: ['Reactjs', 'HTM', 'CSS', 'Create-React-App',],
+    liveVersion: 'https://super-cool-site-by-bateyjosue.netlify.app/',
+    sourceURL: 'https://github.com/Bateyjosue/math_magician',
+  },
 ];
 
 const cardContainer = document.querySelector('#grid');
