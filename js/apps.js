@@ -29,15 +29,6 @@ menuList.forEach((el) => {
 const projectDetails = [
   {
     id: 1,
-    name: 'YouTube Video Player Page Clone',
-    description: "Its a clone of the official YouTube's Video Player Page",
-    featuredImageUrl: 'images/youtude.png',
-    technologies: ['Front-End', 'HTM', 'CSS'],
-    liveVersion: 'https://bateyjosue.github.io/YouTubeVideoPlayerPage/',
-    sourceURL: 'https://github.com/Bateyjosue/YouTubeVideoPlayerPage',
-  },
-  {
-    id: 2,
     name: 'Awesome Books',
     description: "Awesome books is a simple website that displays a list of books and allows you to add and remove books from that list.",
     featuredImageUrl: 'images/awesome-books.png',
@@ -46,52 +37,62 @@ const projectDetails = [
     sourceURL: 'https://github.com/Bateyjosue/awesome-books',
   },
   {
-    id: 3,
+    id: 2,
     name: 'amani-fest',
     description: "Amani-fest is a project to design a platform for Amani Festival which is the annual festival where people get united to sing, dance, and proclaim peace. Take place in February every year in Goma Town/DRCongo. With this platform you will get all information about the Festival, and even book the ticket for the event.",
     featuredImageUrl: './images/amani.png',
     technologies: ['HTM', 'CSS', 'SASS', 'Javascript'],
-    liveVersion: 'https://www.loom.com/share/223e4ec4006549b3a5341fa48c999096',
-    sourceURL: 'https://github.com/Bateyjosue/bateyjosue.me',
+    liveVersion: 'https://amani-fest-jb.netlify.app/',
+    sourceURL: 'https://github.com/Bateyjosue/amani-fest',
+  },
+  {
+    id: 3,
+    name: 'Math Magician',
+    description: "Math magicians is a website for all fans of mathematics, where people can Make simple calculations and read a random math-related quote.",
+    featuredImageUrl: './images/math.png',
+    technologies: ['JavaScript', 'Reactjs', 'HTM', 'CSS', 'Create-React-App',],
+    liveVersion: 'https://math-magician-jb.netlify.app/',
+    sourceURL: 'https://github.com/Bateyjosue/math_magician',
   },
   {
     id: 4,
-    name: 'Automated Mark Recording System',
-    description: "The system is able to capture an image from a webcam that contains information which the Student Registration Number and the mark. The system is going to extract the text will be stored it in a database after then the user can get data and convert it in any format he wishes. The system actually supports excel, pdf, SVG, etcThis project is designed using Python and its Django framework.",
-    featuredImageUrl: './images/captured.png',
-    technologies: ['Python','OpenCV', 'HTM', 'CSS', 'Javascript','jquery', 'Bootstrap'],
-    liveVersion: 'https://github.com/Bateyjosue/mark-recordingUsingOCR',
-    sourceURL: 'https://github.com/Bateyjosue/mark-recordingUsingOCR',
+    name: 'The Meal',
+    description: "This is a web application that allows you to get information about various kinds of meals and recipes from all over the world. Using, MealzDB you can get information about various meals and recipes from all over the world",
+    featuredImageUrl: './images/meals.png',
+    technologies: ['JavaScript', 'webpack', 'HTM', 'CSS'],
+    liveVersion: 'https://bateyjosue.github.io/The-Meal/',
+    sourceURL: 'https://github.com/Bateyjosue/The-Meal',
   },
   {
     id: 5,
-    name: 'fleet-management',
-    description: "Fleet Management System A management system where you can easily manage vehicles",
-    featuredImageUrl: './images/fleet-management.png',
-    technologies: ['PHP', 'HTM', 'CSS', 'Bootstrap'],
-    liveVersion: 'https://fleet-sys.herokuapp.com/',
-    sourceURL: 'https://github.com/Bateyjosue/fleet-management',
+    name: 'mi_bugdet ',
+    description: "It's a apps to help you out to manage your bugdet whereby you ca n Add a category and transactions that belongs to that category. ",
+    featuredImageUrl: './images/budget.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'Rspec', 'Postgresql'],
+    liveVersion: 'https://www.loom.com/share/7b1e4eb40a95466a81104a080ffe2042',
+    sourceURL: 'https://github.com/Bateyjosue/mi_bugdet',
   },
   {
     id: 6,
-    name: 'Bakery Managment System',
-    description: "Bakery Management System is a Desktop based application built with aims first eliminating the paper-based system intended to manage a Bakery company. With the objectives of helping the manager of the store to control and manage the store properly, for now, he is going to have control of products in stock, products purchased daily, remaining products in stock, real clients, as long as his staff.",
-    featuredImageUrl: './images/bakery.png',
-    technologies: ['Java', 'Swing', 'MySql', 'Xanpp','Jasper Report'],
-    liveVersion: 'https://github.com/Bateyjosue/bakery',
-    sourceURL: 'https://github.com/Bateyjosue/bakery',
+    name: 'Bob\'s Gurger Anime ',
+    description: "It's a mobile web application to display the list of characters for the Bob's Gurger Anime show. Fetcher from the Bob's Burger API",
+    featuredImageUrl: './images/bob.png',
+    technologies: ['JavaScript', 'reactjs', 'redux', 'axios'],
+    liveVersion: 'https://bob-burger-jb.netlify.app/',
+    sourceURL: 'https://github.com/Bateyjosue/metrics-webapp',
   },
-  
   {
     id: 7,
-    name: 'Math Magician',
-    description: "Math magicians is a website for all fans of mathematics, where people can Make simple calculations and read a random math-related quote.",
-    featuredImageUrl: './images/FireShot.png',
-    technologies: ['JavaScript', 'Reactjs', 'HTM', 'CSS', 'Create-React-App',],
-    liveVersion: 'https://super-cool-site-by-bateyjosue.netlify.app/',
-    sourceURL: 'https://github.com/Bateyjosue/math_magician',
+    name: 'AIMS course translator ',
+    description: "Its a webapp to translate a mathematical course material from english to Kinyarwanda",
+    featuredImageUrl: './images/aims.png',
+    technologies: ['Python', 'fastAPI', 'google translator API', 'HTML/CSS', 'JavaScript'],
+    liveVersion: 'https://bob-burger-jb.netlify.app/',
+    sourceURL: 'https://github.com/Bateyjosue/metrics-webapp',
   },
 ];
+
+
 
 const cardContainer = document.querySelector('#grid');
 
@@ -99,7 +100,7 @@ projectDetails.forEach((el) => {
   cardContainer.innerHTML += `
       <div class="card-container">
         <div class="card-image">
-          <img src="${el.featuredImageUrl}" alt="gray Image" />
+          <img src="${el.featuredImageUrl}" alt="gray Image" width="400" height="180" />
         </div>
         <div class="card-body">
           <div class="card-title">
@@ -126,7 +127,7 @@ const modalPopup = (index) => {
   modalDetails.innerHTML = `
     <div class="modal-image">
       <span class="modal-close-btn"><i class="bi bi-x-lg"></i></span>
-      <img src="${projectDetails[index].featuredImageUrl}" alt="">
+      <img src="${projectDetails[index].featuredImageUrl}" alt="" width="300" height="180">
     </div>
     <div class="modal-body card-content">
       <h2 class="title">${projectDetails[index].name}</h2>
