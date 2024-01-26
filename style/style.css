@@ -83,7 +83,7 @@ header {
   justify-content: space-between;
   height: 5rem;
   position: fixed;
-  top: 0;
+  top: -2px;
   right: 0;
   left: 0;
   z-index: 2;
@@ -219,7 +219,7 @@ nav .menu-humberger {
 nav .menu-humberger a {
   color: var(--color-gray-light);
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 nav .mobile-menu {
@@ -240,17 +240,36 @@ nav .mobile-menu {
   flex-direction: column;
   gap: 2rem;
 }
-nav .mobile-menu a {
+nav .mobile-menu li > a {
   color: var(--color-gray-light);
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: 700;
+}
+nav .mobile-menu li > a:hover {
+  color: #36b37e;
 }
 nav .mobile-menu li:nth-child(1) {
   align-self: flex-end;
 }
 nav .mobile-menu li:nth-child(1) a i {
   margin: 0 2.5rem 20rem 0;
+}
+nav .mobile-menu ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  justify-self: end;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  left: 2rem;
+}
+nav .mobile-menu ul li > a {
+  font-size: 2rem;
+}
+nav .mobile-menu ul li > a:hover, nav .mobile-menu ul li > a:focus, nav .mobile-menu ul li > a:active {
+  color: #36b37e;
 }
 
 /* Headline */

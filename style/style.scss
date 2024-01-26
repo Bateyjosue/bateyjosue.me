@@ -94,7 +94,7 @@ header {
   justify-content: space-between;
   height: 5rem;
   position: fixed;
-  top: 0;
+  top: -2px;
   right: 0;
   left: 0;
   z-index: 2;
@@ -244,7 +244,7 @@ nav {
     a {
       color: var(--color-gray-light);
       text-decoration: none;
-      font-size: 1.7rem;
+      font-size: 2rem;
       font-weight: 700;
     }
   }
@@ -267,11 +267,17 @@ nav {
     flex-direction: column;
     gap: 2rem;
 
-    a {
+
+    li > a {
       color: var(--color-gray-light);
       text-decoration: none;
-      font-size: 1.7rem;
+      font-size: 1.2rem;
       font-weight: 700;
+      
+      &:hover {
+        color:#36b37e
+      }
+
     }
 
     li:nth-child(1) {
@@ -279,6 +285,23 @@ nav {
 
       a i {
         margin: 0 2.5rem 20rem 0;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 2rem;
+      justify-self: end;
+      position: absolute;
+      bottom: 2rem;
+      right:2rem;
+      left: 2rem;
+      li > a {
+        font-size: 2rem;
+        &:hover, &:focus, &:active{
+          color:#36b37e
+        }
       }
     }
   }
