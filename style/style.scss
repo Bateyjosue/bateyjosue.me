@@ -10,6 +10,8 @@
 }
 
 :root {
+  // Original
+  // --color-primary: #36b37e;
   --color-primary: #36b37e;
   --color-secondary: #172b4d;
   --color-white: #fff;
@@ -18,7 +20,12 @@
   --color-gray-light: #3a4a42;
   --bg-primary: #ebf0ee;
   --bg-secondary: #c5e9da;
+
+  // Test
+
 }
+
+
 
 .blurry-gray {
   background: var(--color-gray);
@@ -84,14 +91,14 @@ ul li {
 header {
   display: flex;
   align-items: center;
-  height: 4rem;
+  justify-content: space-between;
+  height: 5rem;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 2;
   background: var(--color-white);
-
 }
 
 header .logo {
@@ -637,9 +644,19 @@ form {
 
 /* Desktop */
 @media screen and (min-width: 768px) {
+.wrapper {
+  padding: 0rem 4rem;
+}
+
+header {
+  opacity:0.8;
+
+}
+
   a[aria-current="active"]{
     color: var(--color-primary);
   }
+
   nav {
     .menu-humberger {
       display: none;
@@ -686,29 +703,11 @@ form {
 
   .logo {
     color: var(--color-secondary);
-    animation-name: rotate-logo;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
 
     a {
       font-size: 30px;
       padding: 24px;
-      text-decoration: overline;
     }
-  }
-
-  @keyframes rotate-logo {
-    50% {
-      transform: scale(1.2) rotate(150deg) translate(-50%);
-    }
-
-    to {
-      transform: scale(1) rotate(270deg) translate(70%);
-    }
-  }
-
-  main {
-    background-image: url("");
   }
 
   #headline {

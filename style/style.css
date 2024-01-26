@@ -80,7 +80,8 @@ ul li {
 header {
   display: flex;
   align-items: center;
-  height: 4rem;
+  justify-content: space-between;
+  height: 5rem;
   position: fixed;
   top: 0;
   right: 0;
@@ -581,6 +582,12 @@ form .email-error {
 /* Tablet */
 /* Desktop */
 @media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 0rem 4rem;
+  }
+  header {
+    opacity: 0.8;
+  }
   a[aria-current=active] {
     color: var(--color-primary);
   }
@@ -620,36 +627,10 @@ form .email-error {
   }
   .logo {
     color: var(--color-secondary);
-    -webkit-animation-name: rotate-logo;
-            animation-name: rotate-logo;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
   }
   .logo a {
     font-size: 30px;
     padding: 24px;
-    text-decoration: overline;
-  }
-  @-webkit-keyframes rotate-logo {
-    50% {
-      transform: scale(1.2) rotate(150deg) translate(-50%);
-    }
-    to {
-      transform: scale(1) rotate(270deg) translate(70%);
-    }
-  }
-  @keyframes rotate-logo {
-    50% {
-      transform: scale(1.2) rotate(150deg) translate(-50%);
-    }
-    to {
-      transform: scale(1) rotate(270deg) translate(70%);
-    }
-  }
-  main {
-    background-image: url("");
   }
   #headline {
     background-image: url("../images/desk-bg-headline.png");
@@ -667,7 +648,7 @@ form .email-error {
     line-height: 30px;
   }
   .fonts,
-h1 {
+  h1 {
     font-weight: 800;
     font-size: 48px;
     line-height: 50px;
@@ -710,12 +691,12 @@ h1 {
     display: none;
   }
   :focus,
-.card-image img:hover {
+  .card-image img:hover {
     transform: scale(1.1);
     border-radius: 24px;
   }
   :focus .card-image img,
-.card-image img:hover .card-image img {
+  .card-image img:hover .card-image img {
     height: 100%;
     width: 100%;
     border-radius: 8px 8px 0 0;
@@ -723,7 +704,7 @@ h1 {
     background: var(--color-primary);
   }
   :focus .title,
-.card-image img:hover .title {
+  .card-image img:hover .title {
     margin-bottom: 24px;
   }
   .card-body .card-title h2 {
