@@ -29,12 +29,12 @@ menuList.forEach((el) => {
 const projectDetails = [
   {
     id: 1,
-    name: 'Awesome Books',
-    description: 'Awesome books is a simple website that displays a list of books and allows you to add and remove books from that list.',
-    featuredImageUrl: 'images/awesome-books.png',
-    technologies: ['Front-End', 'HTM', 'CSS', 'Javascript'],
-    liveVersion: 'https://bateyjosue.github.io/awesome-books/',
-    sourceURL: 'https://github.com/Bateyjosue/awesome-books',
+    name: 'Moni share',
+    description: 'Car renting app facilitating vehicle registration, location sharing, and real-time tracking',
+    featuredImageUrl: 'images/moni-share.png',
+    technologies: ['reactjs', 'TypScript', 'tailwindcss'],
+    sourceURL: 'https://github.com/Bateyjosue/monishare',
+    liveVersion: 'https://www.monishare-jb.netlify.app',
   },
   {
     id: 2,
@@ -47,12 +47,12 @@ const projectDetails = [
   },
   {
     id: 3,
-    name: 'Math Magician',
-    description: 'Math magicians is a website for all fans of mathematics, where people can Make simple calculations and read a random math-related quote.',
-    featuredImageUrl: './images/math.png',
-    technologies: ['JavaScript', 'Reactjs', 'HTM', 'CSS', 'Create-React-App'],
-    liveVersion: 'https://math-magician-jb.netlify.app/',
-    sourceURL: 'https://github.com/Bateyjosue/math_magician',
+    name: 'Notion Clone',
+    description: 'note create with a / command to add a heading to the created text. just like in notion',
+    featuredImageUrl: './images/notion.png',
+    technologies: ['JavaScript', 'tailwindcss', 'HTM'],
+    liveVersion: 'https://www.notion-clone-jb.netlify.app/',
+    sourceURL: 'https://github.com/Bateyjosue/notion-clone',
   },
   {
     id: 4,
@@ -74,11 +74,11 @@ const projectDetails = [
   },
   {
     id: 6,
-    name: 'Bob\'s Gurger Anime ',
-    description: "It's a mobile web application to display the list of characters for the Bob's Gurger Anime show. Fetcher from the Bob's Burger API",
-    featuredImageUrl: './images/bob.png',
-    technologies: ['JavaScript', 'reactjs', 'redux', 'axios'],
-    liveVersion: 'https://bob-burger-jb.netlify.app/',
+    name: 'todo Apps',
+    description: 'todo using react typescript redux and vite',
+    featuredImageUrl: './images/todo.png',
+    technologies: ['TypeScript', 'reactjs', 'tailwindcss', 'vite', 'redux'],
+    liveVersion: 'https://www.todo-redux-jb.netlify.app/',
     sourceURL: 'https://github.com/Bateyjosue/metrics-webapp',
   },
   {
@@ -88,7 +88,7 @@ const projectDetails = [
     featuredImageUrl: './images/aims.png',
     technologies: ['Python', 'fastAPI', 'google translator API', 'HTML/CSS', 'JavaScript'],
     liveVersion: 'https://bob-burger-jb.netlify.app/',
-    sourceURL: 'https://github.com/Bateyjosue/metrics-webapp',
+    sourceURL: 'https://github.com/Bateyjosue/todo-redux-ts',
   },
 ];
 
