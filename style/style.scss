@@ -115,8 +115,8 @@ header .logo {
 }
 
 .arrow-down button {
-  border: 1px solid var(--bg-primary);
-  background: var(--color-white);
+  border: 3px solid var(--color-gray);
+  background: var(--color-primary);
   width: 40px;
   height: 40px;
   display: flex;
@@ -126,9 +126,9 @@ header .logo {
   margin: auto;
   margin-top: 30px;
 
-  button i {
-    color: var(--color-gray);
-    font-weight: 400;
+  i {
+    color: var(--color-white);
+    font-weight: 700;
     width: 20px;
   }
 }
@@ -322,7 +322,8 @@ main {
   justify-content: space-around;
   gap: 1.4rem;
   h1{
-    margin-top: 2rem;
+    margin-top: 1rem;
+
   }
   .intro {
     color: var(--color-secondary);
@@ -336,15 +337,18 @@ main {
   .headline-text {
     margin-top: 2rem;
     letter-spacing: 0.04rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+
   }
 
   .social-account{
-    margin-top: 2rem;
+    border: yellow solid 1px;
+    display: none;
   }
 
   .arrow-down{
-    margin: 3rem 2rem 0rem;
+    margin: 4rem 2rem 5rem;
   }
 }
 
@@ -747,6 +751,11 @@ header {
       width: 50%;
       margin: 0 auto;
       line-height: 30px;
+    }
+
+    .arrow-down {
+      margin: auto;
+
     }
   }
 

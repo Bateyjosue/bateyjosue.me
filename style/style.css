@@ -104,8 +104,8 @@ header .logo {
 }
 
 .arrow-down button {
-  border: 1px solid var(--bg-primary);
-  background: var(--color-white);
+  border: 3px solid var(--color-gray);
+  background: var(--color-primary);
   width: 40px;
   height: 40px;
   display: flex;
@@ -115,9 +115,9 @@ header .logo {
   margin: auto;
   margin-top: 30px;
 }
-.arrow-down button button i {
-  color: var(--color-gray);
-  font-weight: 400;
+.arrow-down button i {
+  color: var(--color-white);
+  font-weight: 700;
   width: 20px;
 }
 
@@ -288,7 +288,7 @@ main {
   gap: 1.4rem;
 }
 #headline h1 {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 #headline .intro {
   color: var(--color-secondary);
@@ -300,13 +300,15 @@ main {
 #headline .headline-text {
   margin-top: 2rem;
   letter-spacing: 0.04rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 #headline .social-account {
-  margin-top: 2rem;
+  border: yellow solid 1px;
+  display: none;
 }
 #headline .arrow-down {
-  margin: 3rem 2rem 0rem;
+  margin: 4rem 2rem 5rem;
 }
 
 .fonts,
@@ -665,6 +667,9 @@ form .email-error {
     width: 50%;
     margin: 0 auto;
     line-height: 30px;
+  }
+  #headline .arrow-down {
+    margin: auto;
   }
   .fonts,
   h1 {

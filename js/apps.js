@@ -30,7 +30,7 @@ const projectDetails = [
   {
     id: 1,
     name: 'Awesome Books',
-    description: "Awesome books is a simple website that displays a list of books and allows you to add and remove books from that list.",
+    description: 'Awesome books is a simple website that displays a list of books and allows you to add and remove books from that list.',
     featuredImageUrl: 'images/awesome-books.png',
     technologies: ['Front-End', 'HTM', 'CSS', 'Javascript'],
     liveVersion: 'https://bateyjosue.github.io/awesome-books/',
@@ -39,7 +39,7 @@ const projectDetails = [
   {
     id: 2,
     name: 'amani-fest',
-    description: "Amani-fest is a project to design a platform for Amani Festival which is the annual festival where people get united to sing, dance, and proclaim peace. Take place in February every year in Goma Town/DRCongo. With this platform you will get all information about the Festival, and even book the ticket for the event.",
+    description: 'Amani-fest is a project to design a platform for Amani Festival which is the annual festival where people get united to sing, dance, and proclaim peace. Take place in February every year in Goma Town/DRCongo. With this platform you will get all information about the Festival, and even book the ticket for the event.',
     featuredImageUrl: './images/amani.png',
     technologies: ['HTM', 'CSS', 'SASS', 'Javascript'],
     liveVersion: 'https://amani-fest-jb.netlify.app/',
@@ -48,16 +48,16 @@ const projectDetails = [
   {
     id: 3,
     name: 'Math Magician',
-    description: "Math magicians is a website for all fans of mathematics, where people can Make simple calculations and read a random math-related quote.",
+    description: 'Math magicians is a website for all fans of mathematics, where people can Make simple calculations and read a random math-related quote.',
     featuredImageUrl: './images/math.png',
-    technologies: ['JavaScript', 'Reactjs', 'HTM', 'CSS', 'Create-React-App',],
+    technologies: ['JavaScript', 'Reactjs', 'HTM', 'CSS', 'Create-React-App'],
     liveVersion: 'https://math-magician-jb.netlify.app/',
     sourceURL: 'https://github.com/Bateyjosue/math_magician',
   },
   {
     id: 4,
     name: 'The Meal',
-    description: "This is a web application that allows you to get information about various kinds of meals and recipes from all over the world. Using, MealzDB you can get information about various meals and recipes from all over the world",
+    description: 'This is a web application that allows you to get information about various kinds of meals and recipes from all over the world. Using, MealzDB you can get information about various meals and recipes from all over the world',
     featuredImageUrl: './images/meals.png',
     technologies: ['JavaScript', 'webpack', 'HTM', 'CSS'],
     liveVersion: 'https://bateyjosue.github.io/The-Meal/',
@@ -84,15 +84,13 @@ const projectDetails = [
   {
     id: 7,
     name: 'AIMS course translator ',
-    description: "Its a webapp to translate a mathematical course material from english to Kinyarwanda",
+    description: 'Its a webapp to translate a mathematical course material from english to Kinyarwanda',
     featuredImageUrl: './images/aims.png',
     technologies: ['Python', 'fastAPI', 'google translator API', 'HTML/CSS', 'JavaScript'],
     liveVersion: 'https://bob-burger-jb.netlify.app/',
     sourceURL: 'https://github.com/Bateyjosue/metrics-webapp',
   },
 ];
-
-
 
 const cardContainer = document.querySelector('#grid');
 
@@ -178,20 +176,65 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-let active = (element) => {
-  if (element.classList === 'active') {
-    element.classList.remove('active');
-  }
-  else {
-    element.classList.add('active');
-  }
-}
+// const active = (element) => {
+//   if (element.classList === 'active') {
+//     element.classList.remove('active');
+//   } else {
+//     element.classList.add('active');
+//   }
+// };
 
 // const navigation = document.querySelectorAll('.desk-menu li a');
 // navigation.forEach((element) => {
-//   element.addEventListener('click',(e) => {
-//     if(element.innerText === e.target.innerHTML) {
-//       element.setAttribute('aria-current', 'active')
+//   element.addEventListener('click', (e) => {
+//     if (element.innerText === e.target.innerHTML) {
+//       element.setAttribute('aria-current', 'active');
 //     }
 //   });
 // });
+const typeWriterElement = document.querySelector('#typewriter');
+
+const textArray = ['Holla', 'Hello', 'Salut', 'Jambo'];
+
+function delWriter(text, i, cb) {
+  if (i >= 0) {
+    typeWriterElement.innerHTML = text.substring(0, i--);
+    // generate a random Number to emulate backspace hitting.
+    const rndBack = 10 + Math.random() * 100;
+    setTimeout(() => {
+      delWriter(text, i, cb);
+    }, rndBack);
+  } else if (typeof cb === 'function') {
+    setTimeout(cb, 1000);
+  }
+}
+
+function typeWriter(text, i, cb) {
+  if (i < text.length + 1) {
+    typeWriterElement.innerHTML = text.substring(0, i++);
+    // generate a random Number to emulate Typing on the Keyboard.
+    const rndTyping = 250 - Math.random() * 100;
+    setTimeout(() => {
+      typeWriter(text, i++, cb);
+    }, rndTyping);
+  } else if (i === text.length + 1) {
+    setTimeout(() => {
+      delWriter(text, i, cb);
+    }, 1000);
+  }
+}
+
+// the main writer function
+function StartWriter(i) {
+  if (typeof textArray[i] === 'undefined') {
+    setTimeout(() => {
+      StartWriter(0);
+    }, 1000);
+  } else if (i < textArray[i].length + 1) {
+    typeWriter(textArray[i], 0, () => {
+      StartWriter(i + 1);
+    });
+  }
+}
+// wait one second then start the typewriter
+setTimeout(() => StartWriter(0), 100);
