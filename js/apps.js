@@ -107,7 +107,7 @@ projectDetails.forEach((el) => {
           <div class="card-content">
             <ul>
                 ${el.technologies.map((lang) => `<li>${lang} </li>`).join('')}
-          </ul>
+            </ul>
           </div>
           <div class="card-button">
             <button type="submit" class="button" name="project" value="${el.id}">See Project</button>
