@@ -564,13 +564,13 @@ h1 {
       display: flex;
       justify-content: flex-end;
       position: relative;
-      top: 3.5rem;
-      right: 0.8rem;
+      top: 1rem;
+      margin-bottom: 1rem;
 
       i {
-        background: var(--bg-primary);
+        background: var(--bg-secondary);
         border-radius: 8px;
-        color: var(--color-white);
+        color: red;
         padding: 0.3rem;
       }
     }
@@ -580,6 +580,9 @@ h1 {
       height: 100%;
       object-fit: contain;
       border-radius: 18px;
+    }
+
+    .modal-close-btn {
     }
   }
 
@@ -887,7 +890,7 @@ header {
     display: flex;
     flex-direction: column;
     overflow: auto;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem ;
     visibility: hidden;
 
     &::-webkit-scrollbar {
@@ -914,15 +917,11 @@ header {
         display: flex;
         justify-content: flex-end;
         position: relative;
-        top: 0;
-        right: 1.2rem;
-        margin-bottom: 0.5rem;
+        top: 1rem;
+        padding-bottom: 1.2rem;
 
         i {
-          background: var(--bg-primary);
-          color: var(--color-black);
           border-radius: 0.5rem;
-          padding: 0.5rem;
         }
       }
 
@@ -961,7 +960,7 @@ header {
 
     .modal-button {
       flex: 0.2;
-      padding: 1rem 0.3rem;
+      padding: 3rem 0.3rem;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -969,10 +968,18 @@ header {
       right: 2rem;
       top: 30rem;
       gap: 1rem;
-      width: 35%;
+      width: 40%;
 
       a {
         width: 50%;
+        display: flex;
+        gap: 1rem; 
+        align-items: center;
+        justify-content: center;
+
+        i{
+          font-size: 1.2em;
+        }
       }
     }
   }

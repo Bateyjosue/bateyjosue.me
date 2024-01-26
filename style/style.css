@@ -503,13 +503,13 @@ h1 {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  top: 3.5rem;
-  right: 0.8rem;
+  top: 1rem;
+  margin-bottom: 1rem;
 }
 #works .modal .modal-image span i {
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   border-radius: 8px;
-  color: var(--color-white);
+  color: red;
   padding: 0.3rem;
 }
 #works .modal .modal-image img {
@@ -779,7 +779,7 @@ form .email-error {
     display: flex;
     flex-direction: column;
     overflow: auto;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem;
     visibility: hidden;
   }
   #works .modal::-webkit-scrollbar {
@@ -803,15 +803,11 @@ form .email-error {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top: 0;
-    right: 1.2rem;
-    margin-bottom: 0.5rem;
+    top: 1rem;
+    padding-bottom: 1.2rem;
   }
   #works .modal .modal-image span i {
-    background: var(--bg-primary);
-    color: var(--color-black);
     border-radius: 0.5rem;
-    padding: 0.5rem;
   }
   #works .modal .modal-image img {
     width: 100%;
@@ -842,7 +838,7 @@ form .email-error {
   }
   #works .modal .modal-button {
     flex: 0.2;
-    padding: 1rem 0.3rem;
+    padding: 3rem 0.3rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -850,10 +846,17 @@ form .email-error {
     right: 2rem;
     top: 30rem;
     gap: 1rem;
-    width: 35%;
+    width: 40%;
   }
   #works .modal .modal-button a {
     width: 50%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  #works .modal .modal-button a i {
+    font-size: 1.2em;
   }
   #about-myself {
     padding-top: 24px;
