@@ -94,28 +94,28 @@ const projectDetails = [
 
 const cardContainer = document.querySelector('#grid');
 
-projectDetails.forEach((el) => {
+// projectDetails.forEach((el) => {
   cardContainer.innerHTML += `
       <div class="card-container">
         <div class="card-image">
-          <img src="${el.featuredImageUrl}" alt="gray Image" width="400" height="180" />
-        </div>
-        <div class="card-body">
+          <img src="${projectDetails[0].featuredImageUrl}" alt="gray Image" width="400" height="180" />
+          </div>
+          <div class="card-body">
           <div class="card-title">
-            <h2>${el.name}</h2>
+            <h2>${projectDetails[0].name}</h2>
           </div>
           <div class="card-content">
             <ul>
-                ${el.technologies.map((lang) => `<li>${lang} </li>`).join('')}
+                ${projectDetails[0].technologies.map((lang) => `<li>${lang} </li>`).join('')}
             </ul>
+            </div>
+            <div class="card-button">
+            <button type="submit" class="button" name="project" value="${projectDetails[0].id}">See Project</button>
+            </div>
           </div>
-          <div class="card-button">
-            <button type="submit" class="button" name="project" value="${el.id}">See Project</button>
-          </div>
-        </div>
       </div>
   `;
-});
+// });
 
 const detailsBtn = document.querySelectorAll('#grid .card-container .card-button button');
 const modalDetails = document.querySelector('#works .modal');
