@@ -94,27 +94,80 @@ const projectDetails = [
 
 const cardContainer = document.querySelector('#grid');
 
-// projectDetails.forEach((el) => {
+projectDetails.forEach((el) => {
   cardContainer.innerHTML += `
       <div class="card-container">
         <div class="card-image">
-          <img src="${projectDetails[0].featuredImageUrl}" alt="gray Image" width="400" height="180" />
-          </div>
-          <div class="card-body">
+          <img src="${el.featuredImageUrl}" alt="gray Image" width="400" height="180" />
+        </div>
+        <div class="card-body">
           <div class="card-title">
-            <h2>${projectDetails[0].name}</h2>
+            <h2>${el.name}</h2>
           </div>
           <div class="card-content">
             <ul>
-                ${projectDetails[0].technologies.map((lang) => `<li>${lang} </li>`).join('')}
+                ${el.technologies.map((lang) => `<li>${lang} </li>`).join('')}
             </ul>
-            </div>
-            <div class="card-button">
-            <button type="submit" class="button" name="project" value="${projectDetails[0].id}">See Project</button>
-            </div>
           </div>
+          <div class="card-button">
+            <button type="submit" class="button" name="project" value="${el.id}">See Project</button>
+          </div>
+        </div>
       </div>
   `;
+});
+
+const moreButtton = document.querySelector('#more');
+const cards = document.querySelectorAll('#grid .card-container');
+
+cards.forEach((card, index) => {
+  if (index >= 3) {
+    card.classList.add('hide-card');
+  }
+});
+
+if (projectDetails.length < 3) {
+  moreButtton.parentNode.style.display = 'none';
+}
+
+moreButtton.addEventListener('click', (event) => {
+  if (event.target.innerText === 'Show Less') {
+    event.target.innerText = 'Show More';
+    cards.forEach((card, index) => {
+      if (index >= 3) {
+        card.classList.add('hide-card');
+      }
+    });
+  } else {
+    event.target.innerText = 'Show Less';
+    cards.forEach((card, index) => {
+      if (index >= 3) {
+        card.classList.remove('hide-card');
+      }
+    });
+  }
+});
+
+// if (projectDetails.length < 3) {
+//   moreButtton.parentNode.style.display = 'none';
+// }
+
+// moreButtton.addEventListener('click', (event) => {
+//   if (event.target.innerText === 'Show More') {
+//     event.target.innerText = 'Show Less';
+//     cards.forEach((card, index) => {
+//       if (index >= 3) {
+//         card.classList.remove('hide-card');
+//       }
+//     });
+//   } else {
+//     event.target.innerText = 'Show More';
+//     cards.forEach((card, index) => {
+//       if (index >= 3) {
+//         card.classList.add('hide-card');
+//       }
+//     });
+//   }
 // });
 
 const detailsBtn = document.querySelectorAll('#grid .card-container .card-button button');
