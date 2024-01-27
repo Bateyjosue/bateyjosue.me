@@ -495,7 +495,12 @@ h1 {
 .footer-social-account ul {
   margin-top: -50px;
   justify-content: center;
-  font-size: 18px;
+}
+.footer-social-account ul li > a > i {
+  font-size: 2rem;
+}
+.footer-social-account ul li > a > i:hover {
+  color: var(--color-primary);
 }
 
 .social-account p {

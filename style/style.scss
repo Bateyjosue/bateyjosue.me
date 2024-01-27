@@ -558,7 +558,12 @@ h1 {
   ul {
     margin-top: -50px;
     justify-content: center;
-    font-size: 18px;
+    li > a > i {
+      font-size: 2rem;
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
   }
 }
 
@@ -571,6 +576,7 @@ h1 {
   line-height: 32px;
   text-align: center;
   color: var(--color-gray);
+
 }
 
 #works .modal {
