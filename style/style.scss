@@ -65,7 +65,7 @@
   gap: 2rem;
   align-items: center;
   justify-content: end;
-  animation: tada 2s infinite linear 2s;
+  animation: fadeIn 5s infinite linear;
 
   span {
     color: var(--color-primary);
