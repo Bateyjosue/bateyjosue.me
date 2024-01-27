@@ -161,24 +161,30 @@ header .logo {
   color: var(--color-black);
 }
 
-.arrow-down button {
-  border: 3px solid var(--color-gray);
-  background: var(--color-primary);
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 32px;
-  margin: auto;
-  margin-top: 30px;
+.arrow-down{
+  animation: bounce infinite ease-in-out 2s;
 
-  i {
-    color: var(--color-white);
-    font-weight: 700;
-    width: 20px;
+  button {
+    border: 3px solid var(--color-gray);
+    background: var(--color-primary);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    margin: auto;
+    margin-top: 30px;
+
+  
+    i {
+      color: var(--color-white);
+      font-weight: 700;
+      width: 20px;
+    }
   }
 }
+
 
 .content-exp {
   height: inherit;

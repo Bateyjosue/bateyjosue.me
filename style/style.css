@@ -144,6 +144,9 @@ header .logo {
   color: var(--color-black);
 }
 
+.arrow-down {
+  animation: bounce infinite ease-in-out 2s;
+}
 .arrow-down button {
   border: 3px solid var(--color-gray);
   background: var(--color-primary);
