@@ -24,19 +24,16 @@
   align-items: center;
 }
 .grid-container span {
-  color: white;
-  width: 25px;
-  height: 25px;
-  background: var(--color-primary);
-  border: var(--color-secondary) 2px solid;
+  color: --color-primary;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 7px;
+  border-radius: 100px;
+  padding: 0.3em;
 }
 .grid-container span:hover {
-  background: white;
-  color: var(--color-primary);
+  color: white;
+  background: var(--color-primary);
 }
 
 .blurry-gray {
@@ -728,6 +725,25 @@ form .email-error {
     margin: 10px auto 2rem;
     background: var(--color-primary);
     border-radius: 8px;
+  }
+  .grid-container {
+    display: flex;
+    align-items: center;
+  }
+  .grid-container span {
+    color: white;
+    width: 25px;
+    height: 25px;
+    background: var(--color-primary);
+    border: var(--color-secondary) 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+  }
+  .grid-container span:hover {
+    background: white;
+    color: var(--color-primary);
   }
   #grid {
     width: 100%;

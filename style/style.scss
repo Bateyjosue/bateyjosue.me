@@ -30,19 +30,16 @@
   align-items: center;
 
   span {
-    color: white;
-    width: 25px;
-    height: 25px;
-    background: var(--color-primary);
-    border: var(--color-secondary) 2px solid;
+    color: --color-primary;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 7px;
+    border-radius: 100px;
+    padding: .3em;
 
     &:hover {
-      background: white;
-      color: var(--color-primary);
+      color: white;
+      background: var(--color-primary);
 
     }
   }
@@ -828,6 +825,29 @@ header {
       margin: 10px auto 2rem;
       background: var(--color-primary);
       border-radius: 8px;
+    }
+  }
+
+  .grid-container {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: white;
+      width: 25px;
+      height: 25px;
+      background: var(--color-primary);
+      border: var(--color-secondary) 2px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+
+      &:hover {
+        background: white;
+        color: var(--color-primary);
+
+      }
     }
   }
 
