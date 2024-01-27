@@ -10,6 +10,7 @@
     "stylelint-scss": "^3.21.0"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "typewriter-effect": "^2.21.0"
   }
 }

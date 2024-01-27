@@ -19,13 +19,17 @@
   --bg-secondary: #c5e9da;
 }
 
+.hide-card {
+  display: none !important;
+}
+
 .grid-container {
   display: flex;
   align-items: center;
 }
 .grid-container span {
   color: --color-primary;
-  display: flex;
+  display: none !important;
   align-items: center;
   justify-content: center;
   border-radius: 100px;
@@ -34,6 +38,26 @@
 .grid-container span:hover {
   color: white;
   background: var(--color-primary);
+}
+
+.more-projects {
+  background: red;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-primary);
+}
+
+.more-project-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: end;
+  animation: tada 2s infinite linear 2s;
+}
+.more-project-container span {
+  color: var(--color-primary);
+  margin-right: 0.7rem;
 }
 
 .blurry-gray {
