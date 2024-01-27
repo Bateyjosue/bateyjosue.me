@@ -294,6 +294,9 @@ nav {
 
   .menu-humberger {
     display: block;
+    &:hover {
+      animation: flash infinite linear 2s;
+    }
 
     a {
       color: var(--color-gray-light);

@@ -261,6 +261,9 @@ nav .desk-menu {
 nav .menu-humberger {
   display: block;
 }
+nav .menu-humberger:hover {
+  animation: flash infinite linear 2s;
+}
 nav .menu-humberger a {
   color: var(--color-gray-light);
   text-decoration: none;
