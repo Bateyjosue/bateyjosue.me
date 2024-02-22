@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 const showMenu = document.querySelector('#show-menu');
 const closeMenu = document.querySelector('#close-menu');
 const menu = document.querySelector('ul.mobile-menu');
@@ -71,24 +72,6 @@ const projectDetails = [
     technologies: ['HTML/CSS', 'Ruby on Rails', 'Rspec', 'Postgresql'],
     liveVersion: 'https://www.loom.com/share/7b1e4eb40a95466a81104a080ffe2042',
     sourceURL: 'https://github.com/Bateyjosue/mi_bugdet',
-  },
-  {
-    id: 6,
-    name: 'todo Apps',
-    description: 'todo using react typescript redux and vite',
-    featuredImageUrl: './images/todo.png',
-    technologies: ['TypeScript', 'reactjs', 'tailwindcss', 'vite', 'redux'],
-    liveVersion: 'https://www.todo-redux-jb.netlify.app/',
-    sourceURL: 'https://github.com/Bateyjosue/metrics-webapp',
-  },
-  {
-    id: 7,
-    name: 'AIMS course translator ',
-    description: 'Its a webapp to translate a mathematical course material from english to Kinyarwanda',
-    featuredImageUrl: './images/aims.png',
-    technologies: ['Python', 'fastAPI', 'google translator API', 'HTML/CSS', 'JavaScript'],
-    liveVersion: 'https://bob-burger-jb.netlify.app/',
-    sourceURL: 'https://github.com/Bateyjosue/todo-redux-ts',
   },
 ];
 
@@ -251,6 +234,7 @@ const textArray = ['Holla', 'Hello', 'Salut', 'Jambo'];
 
 function delWriter(text, i, cb) {
   if (i >= 0) {
+    // eslint-disable-next-line no-plusplus
     typeWriterElement.innerHTML = text.substring(0, i--);
     // generate a random Number to emulate backspace hitting.
     const rndBack = 10 + Math.random() * 100;
@@ -264,6 +248,7 @@ function delWriter(text, i, cb) {
 
 function typeWriter(text, i, cb) {
   if (i < text.length + 1) {
+    // eslint-disable-next-line no-plusplus
     typeWriterElement.innerHTML = text.substring(0, i++);
     // generate a random Number to emulate Typing on the Keyboard.
     const rndTyping = 250 - Math.random() * 100;
