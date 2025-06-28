@@ -11,7 +11,7 @@ const Projects = () => {
       id: 1,
       name: 'Score Tracker App',
       description: 'Interactive trivia score tracker for team competitions with live leaderboards and celebrations',
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/score.png',
       technologies: ['React.js', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
       liveUrl: 'https://creative-kitten-ffbe2a.netlify.app',
       sourceUrl: 'https://github.com/Bateyjosue/score-tracker-app',
