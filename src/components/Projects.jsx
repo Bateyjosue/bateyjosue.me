@@ -95,7 +95,7 @@ const Projects = () => {
       technologies: ['Ruby on Rails', 'PostgreSQL', 'RSpec'],
       liveUrl: 'https://www.loom.com/share/7b1e4eb40a95466a81104a080ffe2042',
       sourceUrl: 'https://github.com/Bateyjosue/mi_bugdet',
-      featured: false,
+      featured: true,
       status: 'maintenance',
     },
   ]
