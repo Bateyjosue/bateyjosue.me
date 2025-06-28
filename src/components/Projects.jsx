@@ -74,7 +74,7 @@ const Projects = () => {
       liveUrl: 'https://www.notion-clone-jb.netlify.app/',
       sourceUrl: 'https://github.com/Bateyjosue/notion-clone',
       featured: true,
-      status: 'online',
+      status: 'maintenance',
     },
     {
       id: 7,
@@ -96,7 +96,7 @@ const Projects = () => {
       liveUrl: 'https://www.loom.com/share/7b1e4eb40a95466a81104a080ffe2042',
       sourceUrl: 'https://github.com/Bateyjosue/mi_bugdet',
       featured: false,
-      status: 'online',
+      status: 'maintenance',
     },
   ]
 
@@ -180,7 +180,7 @@ const Projects = () => {
         </div>
         
         <div className="flex space-x-4">
-          {project.liveUrl !== '#' ? (
+          {project.liveUrl !== '#' && project.status === 'online' ? (
             <motion.a
               href={project.liveUrl}
               target="_blank"
@@ -192,6 +192,11 @@ const Projects = () => {
               <ExternalLink size={16} />
               <span>Live Demo</span>
             </motion.a>
+          ) : project.status === 'maintenance' ? (
+            <div className="flex items-center space-x-2 bg-neon-pink/20 border border-neon-pink text-neon-pink px-4 py-2 rounded font-bold cursor-not-allowed">
+              <ExternalLink size={16} />
+              <span>Under Maintenance</span>
+            </div>
           ) : (
             <div className="flex items-center space-x-2 bg-gray-600 text-gray-300 px-4 py-2 rounded font-bold cursor-not-allowed">
               <ExternalLink size={16} />
