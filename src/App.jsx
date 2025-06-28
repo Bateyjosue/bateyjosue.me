@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { ThemeProvider } from './contexts/ThemeContext'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
@@ -10,19 +11,21 @@ import MatrixRain from './components/MatrixRain'
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-cyber-dark">
-      <MatrixRain />
-      <div className="relative z-10">
-        <Header />
-        <main>
-          <Hero />
-          <Projects />
-          <About />
-          <Skills />
-          <Contact />
-        </main>
+    <ThemeProvider>
+      <div className="relative min-h-screen transition-colors duration-300">
+        <MatrixRain />
+        <div className="relative z-10">
+          <Header />
+          <main>
+            <Hero />
+            <Projects />
+            <About />
+            <Skills />
+            <Contact />
+          </main>
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   )
 }
 

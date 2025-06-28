@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react'
+import { useTheme } from '../contexts/ThemeContext'
 
 const MatrixRain = () => {
   const canvasRef = useRef(null)
+  const { isDark } = useTheme()
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -22,10 +24,12 @@ const MatrixRain = () => {
     }
 
     function draw() {
-      ctx.fillStyle = 'rgba(10, 10, 10, 0.04)'
+      // Different background colors for light/dark mode
+      ctx.fillStyle = isDark ? 'rgba(10, 10, 10, 0.04)' : 'rgba(249, 250, 251, 0.04)'
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      ctx.fillStyle = '#00ff41'
+      // Different text colors for light/dark mode
+      ctx.fillStyle = isDark ? '#00ff41' : '#3b82f6'
       ctx.font = fontSize + 'px monospace'
 
       for(let i = 0; i < drops.length; i++) {
@@ -52,7 +56,7 @@ const MatrixRain = () => {
       clearInterval(interval)
       window.removeEventListener('resize', handleResize)
     }
-  }, [])
+  }, [isDark])
 
   return (
     <canvas

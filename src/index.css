@@ -8,10 +8,23 @@
   }
   
   body {
-    @apply bg-cyber-dark text-white font-gaming overflow-x-hidden;
+    @apply font-gaming overflow-x-hidden transition-colors duration-300;
+  }
+  
+  /* Dark theme (default) */
+  body {
+    @apply bg-cyber-dark text-white;
     background-image: 
       radial-gradient(circle at 25% 25%, rgba(0, 255, 65, 0.1) 0%, transparent 50%),
       radial-gradient(circle at 75% 75%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+  }
+  
+  /* Light theme */
+  html.light body {
+    @apply bg-gray-50 text-gray-900;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
   }
   
   html {
@@ -32,8 +45,19 @@
   
   .cyber-border::after {
     content: '';
-    @apply absolute inset-[2px] bg-cyber-dark rounded-lg;
+    @apply absolute inset-[2px] rounded-lg;
+    background-color: var(--cyber-bg);
     z-index: -1;
+  }
+  
+  /* Light theme cyber border */
+  html.light .cyber-border::after {
+    @apply bg-white;
+  }
+  
+  /* Dark theme cyber border */
+  .cyber-border::after {
+    @apply bg-cyber-dark;
   }
   
   .glow-text {
@@ -54,6 +78,43 @@
     @apply absolute top-0 left-0 w-full h-[2px] bg-neon-green opacity-50;
     animation: scan 2s linear infinite;
   }
+
+  /* Light theme adjustments */
+  html.light .text-white {
+    @apply text-gray-900;
+  }
+  
+  html.light .text-gray-300 {
+    @apply text-gray-600;
+  }
+  
+  html.light .text-gray-400 {
+    @apply text-gray-500;
+  }
+  
+  html.light .bg-cyber-dark {
+    @apply bg-white;
+  }
+  
+  html.light .bg-cyber-gray {
+    @apply bg-gray-100;
+  }
+  
+  html.light .bg-cyber-light {
+    @apply bg-gray-200;
+  }
+  
+  html.light .border-neon-green\/30 {
+    @apply border-blue-300;
+  }
+  
+  html.light .hover\:border-neon-green:hover {
+    @apply border-blue-500;
+  }
+  
+  html.light .hover\:bg-neon-green\/10:hover {
+    @apply bg-blue-50;
+  }
 }
 
 @layer utilities {
@@ -71,12 +132,26 @@
   @apply bg-cyber-gray;
 }
 
+html.light ::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
+
 ::-webkit-scrollbar-thumb {
   @apply bg-neon-green rounded-full;
   box-shadow: 0 0 10px #00ff41;
 }
 
+html.light ::-webkit-scrollbar-thumb {
+  @apply bg-blue-500 rounded-full;
+  box-shadow: 0 0 10px #3b82f6;
+}
+
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-neon-blue;
   box-shadow: 0 0 10px #00d4ff;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-600;
+  box-shadow: 0 0 10px #2563eb;
 }

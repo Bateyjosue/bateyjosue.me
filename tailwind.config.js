@@ -14,6 +14,10 @@ export default {
         'cyber-dark': '#0a0a0a',
         'cyber-gray': '#1a1a1a',
         'cyber-light': '#2a2a2a',
+        // Light theme colors
+        'light-primary': '#3b82f6',
+        'light-secondary': '#10b981',
+        'light-accent': '#8b5cf6',
       },
       fontFamily: {
         'cyber': ['Orbitron', 'monospace'],
@@ -26,6 +30,7 @@ export default {
         'glitch': 'glitch 0.3s ease-in-out infinite',
         'typewriter': 'typewriter 4s steps(40) infinite',
         'scan': 'scan 2s linear infinite',
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         glow: {
@@ -61,6 +66,7 @@ export default {
       backgroundImage: {
         'cyber-grid': 'linear-gradient(rgba(0,255,65,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,65,0.1) 1px, transparent 1px)',
         'neon-gradient': 'linear-gradient(45deg, #00ff41, #00d4ff, #bf00ff)',
+        'light-gradient': 'linear-gradient(45deg, #3b82f6, #10b981, #8b5cf6)',
       },
       backgroundSize: {
         'grid': '50px 50px',
