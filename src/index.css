@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  
+  body {
+    @apply bg-cyber-dark text-white font-gaming overflow-x-hidden;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(0, 255, 65, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .cyber-border {
+    @apply relative;
+  }
+  
+  .cyber-border::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-neon-green via-neon-blue to-neon-purple p-[2px] rounded-lg;
+    z-index: -1;
+  }
+  
+  .cyber-border::after {
+    content: '';
+    @apply absolute inset-[2px] bg-cyber-dark rounded-lg;
+    z-index: -1;
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+  }
+  
+  .matrix-bg::before {
+    content: '';
+    @apply absolute inset-0 opacity-10;
+    background-image: 
+      linear-gradient(rgba(0,255,65,0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,65,0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: matrix 20s linear infinite;
+  }
+  
+  .scan-line {
+    @apply absolute top-0 left-0 w-full h-[2px] bg-neon-green opacity-50;
+    animation: scan 2s linear infinite;
+  }
+}
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cyber-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neon-green rounded-full;
+  box-shadow: 0 0 10px #00ff41;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neon-blue;
+  box-shadow: 0 0 10px #00d4ff;
+}
