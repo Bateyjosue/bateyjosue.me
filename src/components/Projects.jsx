@@ -71,10 +71,10 @@ const Projects = () => {
       description: 'Advanced note-taking app with slash commands, real-time editing, and modern UI inspired by Notion',
       image: '/notion.png',
       technologies: ['JavaScript', 'TailwindCSS', 'HTML'],
-      liveUrl: 'https://www.notion-clone-jb.netlify.app/',
+      liveUrl: 'https://notion-clone-jb.netlify.app/',
       sourceUrl: 'https://github.com/Bateyjosue/notion-clone',
       featured: true,
-      status: 'maintenance',
+      status: 'online',
     },
     {
       id: 7,

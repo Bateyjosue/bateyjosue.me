@@ -120,7 +120,7 @@ const Hero = () => {
                 className="cyber-border bg-cyber-gray/30 p-4 rounded-lg"
               >
                 <div className="text-neon-blue font-bold text-lg">Backend</div>
-                <div className="text-sm text-gray-300">Node.js • Nest.js • Ruby on Rails</div>
+                <div className="text-sm text-gray-300">Node.js • Nest.js • Ruby on Rails • Python • SAP CAP</div>
               </motion.div>
               
               <motion.div 
