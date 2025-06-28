@@ -86,147 +86,151 @@
 
   /* Light theme text color adjustments */
   html.light .text-white {
-    @apply text-gray-900;
+    color: #111827;
   }
   
   html.light .text-gray-300 {
-    @apply text-gray-600;
+    color: #6b7280;
   }
   
   html.light .text-gray-400 {
-    @apply text-gray-500;
+    color: #9ca3af;
   }
   
   /* Light theme background adjustments */
   html.light .bg-cyber-dark {
-    @apply bg-white;
+    background-color: #ffffff;
   }
   
   html.light .bg-cyber-gray {
-    @apply bg-gray-100;
+    background-color: #f3f4f6;
   }
   
   html.light .bg-cyber-light {
-    @apply bg-gray-200;
+    background-color: #e5e7eb;
   }
   
   /* Light theme neon color replacements for better visibility */
   html.light .text-neon-green {
-    @apply text-emerald-600;
+    color: #059669;
   }
   
   html.light .text-neon-blue {
-    @apply text-blue-600;
+    color: #2563eb;
   }
   
   html.light .text-neon-purple {
-    @apply text-purple-600;
+    color: #9333ea;
   }
   
   html.light .text-neon-pink {
-    @apply text-pink-600;
+    color: #db2777;
   }
   
   /* Light theme border adjustments */
   html.light .border-neon-green\/30 {
-    @apply border-emerald-300;
+    border-color: #6ee7b7;
   }
   
   html.light .border-neon-blue\/30 {
-    @apply border-blue-300;
+    border-color: #93c5fd;
   }
   
   html.light .border-neon-purple\/30 {
-    @apply border-purple-300;
+    border-color: #c4b5fd;
   }
   
   html.light .border-neon-pink\/30 {
-    @apply border-pink-300;
+    border-color: #f9a8d4;
   }
   
   /* Light theme hover states */
   html.light .hover\:border-neon-green:hover {
-    @apply border-emerald-500;
+    border-color: #10b981;
   }
   
   html.light .hover\:border-neon-blue:hover {
-    @apply border-blue-500;
+    border-color: #3b82f6;
   }
   
   html.light .hover\:border-neon-purple:hover {
-    @apply border-purple-500;
+    border-color: #a855f7;
   }
   
   html.light .hover\:border-neon-pink:hover {
-    @apply border-pink-500;
+    border-color: #ec4899;
   }
   
   /* Light theme background hover states */
   html.light .hover\:bg-neon-green\/10:hover {
-    @apply bg-emerald-50;
+    background-color: #ecfdf5;
   }
   
   html.light .hover\:bg-neon-blue\/10:hover {
-    @apply bg-blue-50;
+    background-color: #eff6ff;
   }
   
   html.light .hover\:bg-neon-purple\/10:hover {
-    @apply bg-purple-50;
+    background-color: #faf5ff;
   }
   
   html.light .hover\:bg-neon-pink\/10:hover {
-    @apply bg-pink-50;
+    background-color: #fdf2f8;
   }
   
   /* Light theme button backgrounds */
   html.light .bg-neon-green {
-    @apply bg-emerald-600 text-white;
+    background-color: #059669;
+    color: #ffffff;
   }
   
   html.light .bg-neon-blue {
-    @apply bg-blue-600 text-white;
+    background-color: #2563eb;
+    color: #ffffff;
   }
   
   html.light .bg-neon-purple {
-    @apply bg-purple-600 text-white;
+    background-color: #9333ea;
+    color: #ffffff;
   }
   
   html.light .bg-neon-pink {
-    @apply bg-pink-600 text-white;
+    background-color: #db2777;
+    color: #ffffff;
   }
   
   /* Light theme button hover states */
   html.light .hover\:bg-neon-green:hover {
-    @apply bg-emerald-700;
+    background-color: #047857;
   }
   
   html.light .hover\:bg-neon-blue:hover {
-    @apply bg-blue-700;
+    background-color: #1d4ed8;
   }
   
   html.light .hover\:bg-neon-purple:hover {
-    @apply bg-purple-700;
+    background-color: #7c2d12;
   }
   
   html.light .hover\:bg-neon-pink:hover {
-    @apply bg-pink-700;
+    background-color: #be185d;
   }
   
   /* Light theme gradient backgrounds */
   html.light .bg-neon-green\/10 {
-    @apply bg-emerald-100;
+    background-color: #d1fae5;
   }
   
   html.light .bg-neon-blue\/10 {
-    @apply bg-blue-100;
+    background-color: #dbeafe;
   }
   
   html.light .bg-neon-purple\/10 {
-    @apply bg-purple-100;
+    background-color: #e9d5ff;
   }
   
   html.light .bg-neon-pink\/10 {
-    @apply bg-pink-100;
+    background-color: #fce7f3;
   }
 }
 
