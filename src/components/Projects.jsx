@@ -73,7 +73,7 @@ const Projects = () => {
       technologies: ['JavaScript', 'TailwindCSS', 'HTML'],
       liveUrl: 'https://notion-clone-jb.netlify.app/',
       sourceUrl: 'https://github.com/Bateyjosue/notion-clone',
-      featured: true,
+      featured: false,
       status: 'online',
     },
     {
