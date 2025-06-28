@@ -35,7 +35,7 @@ const Projects = () => {
       id: 3,
       name: 'VoicePay',
       description: 'Voice-Controlled Blockchain Micropayments - Revolutionary payment system using voice commands',
-      image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/yehVO.png',
       technologies: ['React.js', 'Blockchain', 'Web3', 'Voice API'],
       liveUrl: '#',
       sourceUrl: 'https://github.com/josuebatey/yehVo',
