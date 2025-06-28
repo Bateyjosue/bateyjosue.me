@@ -43,6 +43,11 @@
     z-index: -1;
   }
   
+  /* Light theme cyber border */
+  html.light .cyber-border::before {
+    @apply bg-gradient-to-r from-light-primary via-light-secondary to-light-accent;
+  }
+  
   .cyber-border::after {
     content: '';
     @apply absolute inset-[2px] rounded-lg;
@@ -79,7 +84,7 @@
     animation: scan 2s linear infinite;
   }
 
-  /* Light theme adjustments */
+  /* Light theme text color adjustments */
   html.light .text-white {
     @apply text-gray-900;
   }
@@ -92,6 +97,7 @@
     @apply text-gray-500;
   }
   
+  /* Light theme background adjustments */
   html.light .bg-cyber-dark {
     @apply bg-white;
   }
@@ -104,16 +110,136 @@
     @apply bg-gray-200;
   }
   
+  /* Light theme neon color replacements for better visibility */
+  html.light .text-neon-green {
+    @apply text-emerald-600;
+  }
+  
+  html.light .text-neon-blue {
+    @apply text-blue-600;
+  }
+  
+  html.light .text-neon-purple {
+    @apply text-purple-600;
+  }
+  
+  html.light .text-neon-pink {
+    @apply text-pink-600;
+  }
+  
+  /* Light theme border adjustments */
   html.light .border-neon-green\/30 {
+    @apply border-emerald-300;
+  }
+  
+  html.light .border-neon-blue\/30 {
     @apply border-blue-300;
   }
   
+  html.light .border-neon-purple\/30 {
+    @apply border-purple-300;
+  }
+  
+  html.light .border-neon-pink\/30 {
+    @apply border-pink-300;
+  }
+  
+  /* Light theme hover states */
   html.light .hover\:border-neon-green:hover {
+    @apply border-emerald-500;
+  }
+  
+  html.light .hover\:border-neon-blue:hover {
     @apply border-blue-500;
   }
   
+  html.light .hover\:border-neon-purple:hover {
+    @apply border-purple-500;
+  }
+  
+  html.light .hover\:border-neon-pink:hover {
+    @apply border-pink-500;
+  }
+  
+  /* Light theme background hover states */
   html.light .hover\:bg-neon-green\/10:hover {
+    @apply bg-emerald-50;
+  }
+  
+  html.light .hover\:bg-neon-blue\/10:hover {
     @apply bg-blue-50;
+  }
+  
+  html.light .hover\:bg-neon-purple\/10:hover {
+    @apply bg-purple-50;
+  }
+  
+  html.light .hover\:bg-neon-pink\/10:hover {
+    @apply bg-pink-50;
+  }
+  
+  /* Light theme button backgrounds */
+  html.light .bg-neon-green {
+    @apply bg-emerald-600 text-white;
+  }
+  
+  html.light .bg-neon-blue {
+    @apply bg-blue-600 text-white;
+  }
+  
+  html.light .bg-neon-purple {
+    @apply bg-purple-600 text-white;
+  }
+  
+  html.light .bg-neon-pink {
+    @apply bg-pink-600 text-white;
+  }
+  
+  /* Light theme button hover states */
+  html.light .hover\:bg-neon-green:hover {
+    @apply bg-emerald-700;
+  }
+  
+  html.light .hover\:bg-neon-blue:hover {
+    @apply bg-blue-700;
+  }
+  
+  html.light .hover\:bg-neon-purple:hover {
+    @apply bg-purple-700;
+  }
+  
+  html.light .hover\:bg-neon-pink:hover {
+    @apply bg-pink-700;
+  }
+  
+  /* Light theme gradient backgrounds */
+  html.light .bg-neon-green\/10 {
+    @apply bg-emerald-100;
+  }
+  
+  html.light .bg-neon-blue\/10 {
+    @apply bg-blue-100;
+  }
+  
+  html.light .bg-neon-purple\/10 {
+    @apply bg-purple-100;
+  }
+  
+  html.light .bg-neon-pink\/10 {
+    @apply bg-pink-100;
+  }
+  
+  /* Light theme progress bars and special elements */
+  html.light .bg-gradient-to-r.from-neon-green.to-neon-blue {
+    @apply from-emerald-500 to-blue-500;
+  }
+  
+  html.light .bg-gradient-to-r.from-neon-green\/20.to-neon-blue\/20 {
+    @apply from-emerald-100 to-blue-100;
+  }
+  
+  html.light .bg-gradient-to-r.from-neon-green\/20.to-neon-pink\/20 {
+    @apply from-emerald-100 to-pink-100;
   }
 }
 
@@ -142,8 +268,8 @@ html.light ::-webkit-scrollbar-track {
 }
 
 html.light ::-webkit-scrollbar-thumb {
-  @apply bg-blue-500 rounded-full;
-  box-shadow: 0 0 10px #3b82f6;
+  @apply bg-emerald-500 rounded-full;
+  box-shadow: 0 0 10px #10b981;
 }
 
 ::-webkit-scrollbar-thumb:hover {

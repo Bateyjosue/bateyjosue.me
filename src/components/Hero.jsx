@@ -39,11 +39,11 @@ const Hero = () => {
   ]
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-2 h-2 bg-neon-green rounded-full animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-1 h-1 bg-neon-blue rounded-full animate-pulse delay-300"></div>
+        <div className="absolute top-32 left-10 w-2 h-2 bg-neon-green rounded-full animate-pulse"></div>
+        <div className="absolute top-52 right-20 w-1 h-1 bg-neon-blue rounded-full animate-pulse delay-300"></div>
         <div className="absolute bottom-40 left-20 w-1.5 h-1.5 bg-neon-purple rounded-full animate-pulse delay-700"></div>
         <div className="absolute bottom-20 right-10 w-2 h-2 bg-neon-pink rounded-full animate-pulse delay-1000"></div>
       </div>
