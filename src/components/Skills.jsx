@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Code, Database, Wrench } from 'lucide-react'
+import { Code, Database, Wrench, Cloud } from 'lucide-react'
 
 const Skills = () => {
   const skillCategories = [
@@ -14,13 +14,19 @@ const Skills = () => {
       icon: Database,
       title: 'Frameworks',
       color: 'neon-blue',
-      skills: ['React.js', 'Nest.js', 'TailwindCSS', 'FastAPI/Flask', 'Ruby on Rails', 'PostgreSQL'],
+      skills: ['React.js', 'Nest.js', 'TailwindCSS', 'FastAPI/Flask', 'Ruby on Rails', 'PostgreSQL', 'SAP CAP'],
+    },
+    {
+      icon: Cloud,
+      title: 'Cloud & DevOps',
+      color: 'neon-pink',
+      skills: ['AWS', 'Docker', 'Heroku/Render', 'Git/GitHub', 'Postman'],
     },
     {
       icon: Wrench,
       title: 'Tools & Skills',
       color: 'neon-purple',
-      skills: ['Git/GitHub', 'Docker', 'Redux', 'Figma/Photoshop', 'Postman', 'Heroku/Render', 'Jest', 'RSpec'],
+      skills: ['Redux', 'Figma/Photoshop', 'Jest', 'RSpec', 'Trello'],
     },
   ]
 
@@ -74,7 +80,7 @@ const Skills = () => {
           <div className="w-24 h-1 bg-neon-purple mx-auto rounded-full"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
             <SkillCard key={category.title} category={category} index={index} />
           ))}
@@ -96,8 +102,8 @@ const Skills = () => {
             {[
               { skill: 'Frontend Development', level: 95 },
               { skill: 'Backend Development', level: 90 },
+              { skill: 'Cloud & DevOps', level: 85 },
               { skill: 'Database Design', level: 85 },
-              { skill: 'DevOps & Deployment', level: 80 },
             ].map((item, index) => (
               <motion.div
                 key={item.skill}
