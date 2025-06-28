@@ -47,7 +47,7 @@ const About = () => {
               </p>
 
               <motion.a
-                href="https://docs.google.com/document/d/1ZPuV11QOFsNilfRrwazBINtpax33yDUkl0GLN982nDI/edit"
+                href="https://docs.google.com/document/d/1dv9nYeOyrCu3al0Fwt5c2JIdBAbxp_dGcM5-uxpRGyg/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
