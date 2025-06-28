@@ -228,19 +228,6 @@
   html.light .bg-neon-pink\/10 {
     @apply bg-pink-100;
   }
-  
-  /* Light theme progress bars and special elements - Fixed circular dependency */
-  html.light .bg-gradient-to-r.from-neon-green.to-neon-blue {
-    background-image: linear-gradient(to right, #10b981, #3b82f6);
-  }
-  
-  html.light .bg-gradient-to-r.from-neon-green\/20.to-neon-blue\/20 {
-    background-image: linear-gradient(to right, #ecfdf5, #eff6ff);
-  }
-  
-  html.light .bg-gradient-to-r.from-neon-green\/20.to-neon-pink\/20 {
-    background-image: linear-gradient(to right, #ecfdf5, #fdf2f8);
-  }
 }
 
 @layer utilities {
