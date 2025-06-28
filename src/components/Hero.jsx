@@ -86,28 +86,70 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-2xl md:text-4xl font-gaming text-neon-green glow-text"
           >
-            Software Engineer
+            Full-Stack Software Engineer
           </motion.h2>
 
-          {/* Description */}
-          <motion.p
+          {/* Enhanced Professional Summary */}
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
+            className="max-w-5xl mx-auto space-y-6"
           >
-            A full-stack developer with a passion for creating innovative, user-friendly web applications. 
-            I specialize in building scalable, secure, and performance-driven web applications using 
-            <span className="text-neon-blue"> React.js</span>, 
-            <span className="text-neon-green"> Nest.js</span>, and 
-            <span className="text-neon-purple"> Ruby on Rails</span>
-          </motion.p>
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              <span className="text-neon-blue font-semibold">3+ years</span> of experience crafting innovative, 
+              scalable web applications with a passion for clean code and exceptional user experiences. 
+              Specialized in modern full-stack development using cutting-edge technologies.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+              <motion.div 
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 1.0 }}
+                className="cyber-border bg-cyber-gray/30 p-4 rounded-lg"
+              >
+                <div className="text-neon-green font-bold text-lg">Frontend</div>
+                <div className="text-sm text-gray-300">React.js • TypeScript • TailwindCSS</div>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 1.1 }}
+                className="cyber-border bg-cyber-gray/30 p-4 rounded-lg"
+              >
+                <div className="text-neon-blue font-bold text-lg">Backend</div>
+                <div className="text-sm text-gray-300">Node.js • Nest.js • Ruby on Rails</div>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 1.2 }}
+                className="cyber-border bg-cyber-gray/30 p-4 rounded-lg"
+              >
+                <div className="text-neon-purple font-bold text-lg">Database</div>
+                <div className="text-sm text-gray-300">PostgreSQL • MongoDB • Redis</div>
+              </motion.div>
+            </div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 1.3 }}
+              className="text-base md:text-lg text-gray-400 italic"
+            >
+              "Transforming complex business requirements into elegant, performant solutions 
+              that drive user engagement and business growth."
+            </motion.p>
+          </motion.div>
 
           {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 1.4 }}
             className="flex justify-center space-x-6"
           >
             {socialLinks.map((social, index) => (
@@ -130,7 +172,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
+            transition={{ duration: 0.8, delay: 1.6 }}
             className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
           >
             <motion.a
@@ -139,7 +181,7 @@ const Hero = () => {
               transition={{ duration: 2, repeat: Infinity }}
               className="flex flex-col items-center text-neon-green hover:text-neon-blue transition-colors duration-300"
             >
-              <span className="text-sm mb-2 font-gaming">Scroll Down</span>
+              <span className="text-sm mb-2 font-gaming">Explore My Work</span>
               <ChevronDown className="w-6 h-6" />
             </motion.a>
           </motion.div>
