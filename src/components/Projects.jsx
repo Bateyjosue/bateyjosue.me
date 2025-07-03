@@ -37,10 +37,10 @@ const Projects = () => {
       description: 'Voice-Controlled Blockchain Micropayments - Revolutionary payment system using voice commands',
       image: '/yehVO.png',
       technologies: ['React.js', 'Blockchain', 'Web3', 'Voice API'],
-      liveUrl: '#',
-      sourceUrl: 'https://github.com/josuebatey/yehVo',
+      liveUrl: 'https://yeh-vo.netlify.app/',
+      sourceUrl: 'https://github.com/josuebatey/yeh-Vo',
       featured: true,
-      status: 'maintenance',
+      status: 'online',
       isLatest: true,
     },
     {
