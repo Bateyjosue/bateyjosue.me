@@ -8,6 +8,58 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 12,
+      name: 'FUDI Uganda',
+      role: 'Web Developer',
+      description: 'Landing page and content-managed website for Faith United Development Initiative, a community-based organisation supporting refugees and host communities in Nakivale, Uganda',
+      image: '/fudi.jpg',
+      technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Headless CMS'],
+      liveUrl: 'https://www.fudi-ug.org',
+      linkLabel: 'Visit Site',
+      featured: true,
+      status: 'online',
+      isLatest: true,
+    },
+    {
+      id: 9,
+      name: 'SkillBridge',
+      role: 'Backend Developer → Full-Stack Developer → Team Lead',
+      description: 'AI-powered NESA exam preparation and learning platform serving 3,000+ active learners, with role-based learning, classroom management, assessments, reporting, and parent engagement',
+      image: '/skillbridge.jpg',
+      technologies: ['Next.js', 'React', 'Node.js', 'Express.js', 'TypeScript', 'MongoDB', 'OpenAI', 'Docker', 'GCP'],
+      liveUrl: 'https://skillbridge.academy/en',
+      linkLabel: 'Visit Site',
+      featured: true,
+      status: 'online',
+      isLatest: true,
+    },
+    {
+      id: 10,
+      name: 'Kampe Store',
+      role: 'Full-Stack Developer',
+      description: 'Scalable multi-store e-commerce platform for building and managing branded online stores, supporting physical products, digital products, service bookings, and AI-powered product discovery',
+      image: '/kampestore.jpg',
+      technologies: ['Next.js', 'PostgreSQL', 'TailwindCSS', 'AI Search'],
+      liveUrl: 'https://www.kampestore.com/',
+      linkLabel: 'Visit Site',
+      featured: true,
+      status: 'online',
+      isLatest: true,
+    },
+    {
+      id: 11,
+      name: 'Miimo',
+      role: 'Full-Stack Developer',
+      description: 'AI-powered recruitment platform for the DRC that streamlines hiring with intelligent candidate matching, an applicant tracking system, smart search, and automated notifications',
+      image: '/miimo.jpg',
+      technologies: ['React', 'Node.js', 'Express.js', 'TypeScript', 'MongoDB', 'TailwindCSS'],
+      liveUrl: 'https://www.miimo.work/',
+      linkLabel: 'Visit Site',
+      featured: true,
+      status: 'online',
+      isLatest: true,
+    },
+    {
       id: 1,
       name: 'Score Tracker App',
       description: 'Interactive trivia score tracker for team competitions with live leaderboards and celebrations',
@@ -17,7 +69,6 @@ const Projects = () => {
       sourceUrl: 'https://github.com/Bateyjosue/score-tracker-app',
       featured: true,
       status: 'online',
-      isLatest: true,
     },
     {
       id: 2,
@@ -29,7 +80,6 @@ const Projects = () => {
       sourceUrl: 'https://github.com/Bateyjosue/regideso-index',
       featured: true,
       status: 'maintenance',
-      isLatest: true,
     },
     {
       id: 3,
@@ -41,7 +91,6 @@ const Projects = () => {
       sourceUrl: 'https://github.com/josuebatey/yeh-Vo',
       featured: true,
       status: 'online',
-      isLatest: true,
     },
     {
       id: 4,
@@ -129,7 +178,7 @@ const Projects = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className={`group relative cyber-border bg-cyber-gray rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 ${
+      className={`group relative cyber-border bg-cyber-gray rounded-lg overflow-hidden flex flex-col hover:scale-105 transition-all duration-300 ${
         project.isLatest ? 'ring-2 ring-neon-green/50' : ''
       }`}
     >
@@ -159,10 +208,16 @@ const Projects = () => {
         )}
       </div>
       
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <h3 className="text-xl font-cyber font-bold text-neon-green mb-2 group-hover:glow-text transition-all duration-300">
           {project.name}
         </h3>
+        
+        {project.role && (
+          <p className="text-neon-blue text-xs font-semibold uppercase tracking-wide mb-2">
+            {project.role}
+          </p>
+        )}
         
         <p className="text-gray-300 mb-4 text-sm leading-relaxed">
           {project.description}
@@ -179,7 +234,7 @@ const Projects = () => {
           ))}
         </div>
         
-        <div className="flex space-x-4">
+        <div className="flex flex-wrap gap-3 mt-auto">
           {project.liveUrl !== '#' && project.status === 'online' ? (
             <motion.a
               href={project.liveUrl}
@@ -190,7 +245,7 @@ const Projects = () => {
               className="flex items-center space-x-2 bg-neon-green text-cyber-dark px-4 py-2 rounded font-bold hover:bg-neon-blue transition-colors duration-300"
             >
               <ExternalLink size={16} />
-              <span>Live Demo</span>
+              <span>{project.linkLabel || 'Live Demo'}</span>
             </motion.a>
           ) : project.status === 'maintenance' ? (
             <div className="flex items-center space-x-2 bg-neon-pink/20 border border-neon-pink text-neon-pink px-4 py-2 rounded font-bold cursor-not-allowed">
@@ -204,17 +259,19 @@ const Projects = () => {
             </div>
           )}
           
-          <motion.a
-            href={project.sourceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center space-x-2 border border-neon-green text-neon-green px-4 py-2 rounded font-bold hover:bg-neon-green hover:text-cyber-dark transition-all duration-300"
-          >
-            <Github size={16} />
-            <span>Source</span>
-          </motion.a>
+          {project.sourceUrl && (
+            <motion.a
+              href={project.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center space-x-2 border border-neon-green text-neon-green px-4 py-2 rounded font-bold hover:bg-neon-green hover:text-cyber-dark transition-all duration-300"
+            >
+              <Github size={16} />
+              <span>Source</span>
+            </motion.a>
+          )}
         </div>
       </div>
     </motion.div>

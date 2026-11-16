@@ -206,7 +206,7 @@ const Contact = () => {
         className="mt-20 pt-8 border-t border-neon-green/30 text-center"
       >
         <p className="text-gray-400">
-          © 2024 Josue Batey. All rights reserved. Built with React & TailwindCSS
+          © 2026 Josue Batey. All rights reserved. Built with React & TailwindCSS
         </p>
       </motion.footer>
     </section>

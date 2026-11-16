@@ -97,9 +97,13 @@ const Hero = () => {
             className="max-w-5xl mx-auto space-y-6"
           >
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-              <span className="text-neon-blue font-semibold">3+ years</span> of experience crafting innovative, 
-              scalable web applications with a passion for clean code and exceptional user experiences. 
-              Specialized in modern full-stack development using cutting-edge technologies.
+              <span className="text-neon-blue font-semibold">Full-stack software engineer</span> with
+              4+ years building production applications, scalable backend services, and AI-powered
+              products. I've helped scale an AI learning platform to
+              <span className="text-neon-green font-semibold"> 3,000+ active learners</span>, cut manual
+              cloud reporting by <span className="text-neon-green font-semibold">80%</span>, and shipped
+              end-to-end features across Node.js, TypeScript, NestJS, React, PostgreSQL, MongoDB, and AWS —
+              with a focus on clean architecture and reliable APIs.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
@@ -107,30 +111,30 @@ const Hero = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 1.0 }}
-                className="cyber-border bg-cyber-gray/30 p-4 rounded-lg"
+                className="cyber-border bg-cyber-gray p-4 rounded-lg"
               >
                 <div className="text-neon-green font-bold text-lg">Frontend</div>
-                <div className="text-sm text-gray-300">React.js • TypeScript • TailwindCSS</div>
+                <div className="text-sm text-gray-300">React.js • Next.js • TypeScript • Tailwind CSS</div>
               </motion.div>
               
               <motion.div 
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.1 }}
-                className="cyber-border bg-cyber-gray/30 p-4 rounded-lg"
+                className="cyber-border bg-cyber-gray p-4 rounded-lg"
               >
                 <div className="text-neon-blue font-bold text-lg">Backend</div>
-                <div className="text-sm text-gray-300">Node.js • Nest.js • Ruby on Rails • Python • SAP CAP</div>
+                <div className="text-sm text-gray-300">Node.js • NestJS • FastAPI • Spring Boot</div>
               </motion.div>
               
               <motion.div 
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 1.2 }}
-                className="cyber-border bg-cyber-gray/30 p-4 rounded-lg"
+                className="cyber-border bg-cyber-gray p-4 rounded-lg"
               >
                 <div className="text-neon-purple font-bold text-lg">Database</div>
-                <div className="text-sm text-gray-300">PostgreSQL • MongoDB • Redis</div>
+                <div className="text-sm text-gray-300">PostgreSQL • MongoDB • MySQL • SAP HANA</div>
               </motion.div>
             </div>
 

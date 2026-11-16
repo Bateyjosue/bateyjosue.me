@@ -9,7 +9,7 @@ export default {
       colors: {
         'neon-green': '#00ff41',
         'neon-blue': '#00d4ff',
-        'neon-purple': '#bf00ff',
+        'neon-purple': '#d946ef',
         'neon-pink': '#ff0080',
         'cyber-dark': '#0a0a0a',
         'cyber-gray': '#1a1a1a',

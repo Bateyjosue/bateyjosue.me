@@ -6,7 +6,7 @@ const About = () => {
   const stats = [
     { icon: Code, label: 'Projects Completed', value: '50+' },
     { icon: Zap, label: 'Technologies Mastered', value: '15+' },
-    { icon: Target, label: 'Years Experience', value: '3+' },
+    { icon: Target, label: 'Years Experience', value: '4+' },
   ]
 
   return (
@@ -47,7 +47,7 @@ const About = () => {
               </p>
 
               <motion.a
-                href="https://docs.google.com/document/d/1dv9nYeOyrCu3al0Fwt5c2JIdBAbxp_dGcM5-uxpRGyg/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1VMsmN-JVsASQe0W0FcY262eOq0tWaxuY/edit?usp=sharing&ouid=102177650420171671017&rtpof=true&sd=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

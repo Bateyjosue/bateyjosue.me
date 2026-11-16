@@ -1,32 +1,70 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Code, Database, Wrench, Cloud } from 'lucide-react'
+import { Code, Cloud, Database, Monitor, Server, Wrench } from 'lucide-react'
 
 const Skills = () => {
   const skillCategories = [
     {
       icon: Code,
-      title: 'Languages',
-      color: 'neon-green',
-      skills: ['JavaScript', 'TypeScript', 'Ruby', 'Python', 'SQL'],
+      title: 'Programming Languages',
+      color: 'text-neon-green',
+      iconBackground: 'bg-neon-green/10',
+      skillStyle: 'text-neon-green border-neon-green/30 hover:bg-neon-green/10',
+      skills: ['JavaScript', 'TypeScript', 'Python', 'Java'],
+    },
+    {
+      icon: Server,
+      title: 'Backend & API Development',
+      color: 'text-neon-blue',
+      iconBackground: 'bg-neon-blue/10',
+      skillStyle: 'text-neon-blue border-neon-blue/30 hover:bg-neon-blue/10',
+      skills: [
+        'Node.js', 'NestJS', 'FastAPI', 'REST APIs', 'GraphQL', 'SAP CAP',
+        'JWT Authentication', 'Spring Boot',
+      ],
     },
     {
       icon: Database,
-      title: 'Frameworks',
-      color: 'neon-blue',
-      skills: ['React.js', 'Nest.js', 'TailwindCSS', 'FastAPI/Flask', 'Ruby on Rails', 'PostgreSQL', 'SAP CAP'],
+      title: 'Databases',
+      color: 'text-neon-purple',
+      iconBackground: 'bg-neon-purple/10',
+      skillStyle: 'text-neon-purple border-neon-purple/30 hover:bg-neon-purple/10',
+      skills: [
+        'PostgreSQL', 'MongoDB', 'MySQL', 'Database Design', 'Data Modelling',
+        'SAP HANA', 'Prisma', 'TypeORM',
+      ],
     },
     {
       icon: Cloud,
       title: 'Cloud & DevOps',
-      color: 'neon-pink',
-      skills: ['AWS', 'Docker', 'Heroku/Render', 'Git/GitHub', 'Postman'],
+      color: 'text-neon-pink',
+      iconBackground: 'bg-neon-pink/10',
+      skillStyle: 'text-neon-pink border-neon-pink/30 hover:bg-neon-pink/10',
+      skills: [
+        'AWS Lambda', 'AWS S3', 'AWS EC2', 'AWS Athena', 'AWS Glue',
+        'AWS DynamoDB', 'Serverless Architecture', 'Docker', 'CI/CD',
+        'GitHub Actions', 'GCP',
+      ],
+    },
+    {
+      icon: Monitor,
+      title: 'Frontend',
+      color: 'text-neon-green',
+      iconBackground: 'bg-neon-green/10',
+      skillStyle: 'text-neon-green border-neon-green/30 hover:bg-neon-green/10',
+      skills: ['React.js', 'Next.js', 'Tailwind CSS', 'HTML'],
     },
     {
       icon: Wrench,
-      title: 'Tools & Skills',
-      color: 'neon-purple',
-      skills: ['Redux', 'Figma/Photoshop', 'Jest', 'RSpec', 'Trello'],
+      title: 'Tools & Methodologies',
+      color: 'text-neon-blue',
+      iconBackground: 'bg-neon-blue/10',
+      skillStyle: 'text-neon-blue border-neon-blue/30 hover:bg-neon-blue/10',
+      skills: [
+        'Git', 'Agile/Scrum', 'JIRA', 'OpenAI API', 'Figma', 'System Design',
+        'Debugging', 'Unit testing', 'Integration testing', 'Jest', 'Playwright',
+        'Clean architecture', 'API Testing', 'Swagger/OpenAPI',
+      ],
     },
   ]
 
@@ -36,18 +74,18 @@ const Skills = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2 }}
       viewport={{ once: true }}
-      className="cyber-border bg-cyber-gray rounded-lg p-8 hover:scale-105 transition-all duration-300 group"
+      className="cyber-border bg-cyber-gray rounded-lg p-6 transition-all duration-300 group"
     >
-      <div className="text-center mb-6">
-        <div className={`inline-flex p-4 rounded-full bg-${category.color}/10 mb-4 group-hover:animate-pulse`}>
-          <category.icon className={`w-12 h-12 text-${category.color}`} />
+      <div className="flex items-center gap-3 mb-5">
+        <div className={`inline-flex p-3 rounded-full ${category.iconBackground} group-hover:animate-pulse`}>
+          <category.icon className={`w-7 h-7 ${category.color}`} />
         </div>
-        <h3 className={`text-2xl font-cyber font-bold text-${category.color} glow-text`}>
+        <h3 className={`text-lg font-cyber font-bold ${category.color} glow-text`}>
           {category.title}
         </h3>
       </div>
       
-      <div className="space-y-3">
+      <div className="flex flex-wrap gap-2">
         {category.skills.map((skill, skillIndex) => (
           <motion.div
             key={skill}
@@ -55,7 +93,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: (index * 0.2) + (skillIndex * 0.1) }}
             viewport={{ once: true }}
-            className={`cyber-border bg-cyber-dark p-3 rounded text-center font-medium text-${category.color} hover:bg-${category.color}/10 transition-all duration-300 cursor-default`}
+            className={`rounded border bg-cyber-dark px-3 py-1.5 text-sm font-medium transition-colors duration-300 cursor-default ${category.skillStyle}`}
           >
             {skill}
           </motion.div>
@@ -80,58 +118,11 @@ const Skills = () => {
           <div className="w-24 h-1 bg-neon-purple mx-auto rounded-full"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <SkillCard key={category.title} category={category} index={index} />
           ))}
         </div>
-
-        {/* Gaming-style progress bars */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="mt-16 cyber-border bg-cyber-gray p-8 rounded-lg"
-        >
-          <h3 className="text-2xl font-cyber font-bold text-neon-green text-center mb-8 glow-text">
-            SKILL LEVELS
-          </h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { skill: 'Frontend Development', level: 95 },
-              { skill: 'Backend Development', level: 90 },
-              { skill: 'Cloud & DevOps', level: 85 },
-              { skill: 'Database Design', level: 85 },
-            ].map((item, index) => (
-              <motion.div
-                key={item.skill}
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="space-y-2"
-              >
-                <div className="flex justify-between text-white font-medium">
-                  <span>{item.skill}</span>
-                  <span className="text-neon-green">{item.level}%</span>
-                </div>
-                <div className="w-full bg-cyber-dark rounded-full h-3 overflow-hidden">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${item.level}%` }}
-                    transition={{ duration: 1, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className="h-full bg-gradient-to-r from-neon-green to-neon-blue rounded-full relative"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-scan"></div>
-                  </motion.div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   )

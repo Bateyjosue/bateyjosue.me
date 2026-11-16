@@ -66,7 +66,7 @@
   }
   
   .glow-text {
-    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+    text-shadow: 0 0 4px currentColor;
   }
   
   .matrix-bg::before {
@@ -90,11 +90,15 @@
   }
   
   html.light .text-gray-300 {
-    color: #6b7280;
+    color: #64748b;
   }
   
   html.light .text-gray-400 {
-    color: #9ca3af;
+    color: #64748b;
+  }
+
+  html.light .placeholder-gray-400::placeholder {
+    color: #64748b;
   }
   
   /* Light theme background adjustments */
@@ -103,7 +107,11 @@
   }
   
   html.light .bg-cyber-gray {
-    background-color: #f3f4f6;
+    background-color: #f8fafc;
+  }
+
+  html.light .bg-cyber-gray\/30 {
+    background-color: rgb(255 255 255 / 85%);
   }
   
   html.light .bg-cyber-light {
@@ -112,19 +120,23 @@
   
   /* Light theme neon color replacements for better visibility */
   html.light .text-neon-green {
-    color: #059669;
+    color: #047857;
   }
   
   html.light .text-neon-blue {
-    color: #2563eb;
+    color: #1d4ed8;
   }
   
   html.light .text-neon-purple {
-    color: #9333ea;
+    color: #7e22ce;
   }
   
   html.light .text-neon-pink {
-    color: #db2777;
+    color: #be185d;
+  }
+
+  html.light .glow-text {
+    text-shadow: 0 1px 2px rgb(15 23 42 / 12%);
   }
   
   /* Light theme border adjustments */
@@ -180,23 +192,27 @@
   
   /* Light theme button backgrounds */
   html.light .bg-neon-green {
-    background-color: #059669;
+    background-color: #047857;
     color: #ffffff;
   }
   
   html.light .bg-neon-blue {
-    background-color: #2563eb;
+    background-color: #1d4ed8;
     color: #ffffff;
   }
   
   html.light .bg-neon-purple {
-    background-color: #9333ea;
+    background-color: #7e22ce;
     color: #ffffff;
   }
   
   html.light .bg-neon-pink {
-    background-color: #db2777;
+    background-color: #be185d;
     color: #ffffff;
+  }
+
+  html.light .bg-cyber-dark\/95 {
+    background-color: rgb(255 255 255 / 95%);
   }
   
   /* Light theme button hover states */
@@ -209,7 +225,7 @@
   }
   
   html.light .hover\:bg-neon-purple:hover {
-    background-color: #7c2d12;
+    background-color: #6b21a8;
   }
   
   html.light .hover\:bg-neon-pink:hover {
